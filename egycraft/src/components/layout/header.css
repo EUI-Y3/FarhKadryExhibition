@@ -1,0 +1,38 @@
+header{
+   display: flex;
+    max-width: 1300px;
+    width: 100%;
+    padding: 10px 0;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+    background: var(--mainBg, #FFF4E2);
+    position: relative;
+
+}
+.headerCont{
+    position: fixed;
+    z-index: 99999;
+    margin: 0px auto 0 auto;
+    width: 100%;
+    padding: 0 100px;
+}
+.headerBg{
+    /* width: 100%; */
+    height: 110.8%;
+    position: absolute;
+    z-index: -1;
+    /* height: 109px; */
+    right: -5%;
+}
+.headerBg2{
+    left: -5%;
+}
+ul{
+    list-style: none;
+}
+header .logo{
+    /* padding: 10px 0; */
+    height: 70px;
+    box-sizing: border-box;
+}

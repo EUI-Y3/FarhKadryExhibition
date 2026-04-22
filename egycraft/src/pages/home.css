@@ -1,11 +1,20 @@
 *{
-    font-family: "Noto Sans Arabic";
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    color: #F7F6F2;
     transition: all 300ms ease-in-out;
     scroll-behavior: smooth;
+}
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+  
+}
+::-webkit-scrollbar-thumb {
+  background: #FFF4E2;
 }
 body{
     position: relative;
