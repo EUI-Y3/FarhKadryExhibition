@@ -25,7 +25,6 @@ const Home = () => {
             <img className='logodecor2' src={logodecor2} alt="" />
         </div>
         <h3>Discover The Craft of Egypt</h3>
-
         </div>
     </section>
     </div>
