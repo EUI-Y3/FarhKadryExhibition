@@ -6,6 +6,8 @@ import './home.css'
 import logoicon from '../assets/logo2.svg'
 import logodecor1 from '../assets/tashkil.svg'
 import logodecor2 from '../assets/decor.svg'
+import circle from '../assets/circle1.svg'
+
 import frame1 from '../assets/frame2.svg'
 import herologo from '../assets/herologo.svg'
 import Header from '../components/layout/header';
@@ -34,6 +36,10 @@ const Home = () => {
         <h3>Discover The Craft of Egypt</h3>
         </div>
         <div className="heroCont2">
+            <div className="animatedCircleCont">
+            <div className="rectangle1"></div>
+                <img src={circle} alt="" />
+            </div>
             <Model1 />
         </div>
     </section>
