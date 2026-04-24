@@ -7,6 +7,7 @@ import logoicon from '../assets/logo2.svg'
 import logodecor1 from '../assets/tashkil.svg'
 import logodecor2 from '../assets/decor.svg'
 import circle from '../assets/circle1.svg'
+import MouseTrailSVG from '../components/common/MouseTrailSVG'
 
 import frame1 from '../assets/frame2.svg'
 import herologo from '../assets/herologo.svg'
@@ -29,7 +30,8 @@ const Home = () => {
             <img src={logoicon} alt="fatima hand logo" />
             </div>
             <div className="logoCont">
-            <img className='logodecor1' src={logodecor1} alt="" />
+                <MouseTrailSVG />
+            {/* <img className='logodecor1' src={logodecor1} alt="" /> */}
             <img src={herologo} alt="Egycraft ايجي كرافت" />
             <img className='logodecor2' src={logodecor2} alt="" />
         </div>
