@@ -8,7 +8,8 @@ const Model1 = () => {
     disable-zoom
     alt="3d model of a traditional ornament plate"
   disable-tap
-   interaction-prompt="none"
+progress-bar="hidden"
+  interaction-prompt="none"
     field-of-view="28deg" auto-rotate> </model-viewer>
 
     </> );

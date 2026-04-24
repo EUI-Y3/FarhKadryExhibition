@@ -12,6 +12,7 @@ import MouseTrailSVG from '../components/common/MouseTrailSVG'
 import frame1 from '../assets/frame2.svg'
 import herologo from '../assets/herologo.svg'
 import Header from '../components/layout/header';
+import Button from '../components/common/button';
 const Home = () => {
     return ( <>
     <Header />
@@ -36,6 +37,11 @@ const Home = () => {
             <img className='logodecor2' src={logodecor2} alt="" />
         </div>
         <h3>Discover The Craft of Egypt</h3>
+        <div className="btnFlex">
+            <Button style1="size1 blue" cta="Book my ticket" link="/booking" />
+            <Button style1="size1 beige" cta="Book my ticket" link="/booking" />
+
+        </div>
         </div>
         <div className="heroCont2">
             <div className="animatedCircleCont">
