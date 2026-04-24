@@ -83,9 +83,13 @@ h6{
   position: absolute;
   top: 0;
   display: flex;
-  
+  flex-direction: column;
   /* left: -90px; */
   width: 100%;
+}
+.secBg img{
+  width: 100%;
+  height: auto;
 }
 .secContainer{
   position: relative;
@@ -103,6 +107,7 @@ section{
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
 }
 .logoCont{
   display: flex;
@@ -110,6 +115,7 @@ section{
   align-items: center;
   flex-direction: column;
   gap: 10px;
+  background-color: #FFF4E2;
 }
 .heroCont1{
   display: flex;
@@ -143,4 +149,71 @@ line-height: 140%; /* 44.8px */
   0%   { transform: translateY(0); }
   50%  { transform:  translateY(10px); }
   100% { transform: translateY(0); }
+}
+.heroCont2{
+  background-color: #FFF4E2;
+  display: flex;
+  position: relative;
+  width: 100%;
+}
+.rectangle1{
+  display: flex;
+  width: 100vw;
+  background-color: #FFF4E2;
+    display: flex;
+    height: 300px;
+    width: 100vw;
+    /* left: revert-layer; */
+    /* bottom: -155px; */
+    /* position: absolute; */
+    /* z-index: -1; */
+    background-color: #FFF4E2;
+}
+.mask1 {
+  -webkit-mask-image: url(./../assets/frame1.svg);
+  mask-image:url(./../assets/frame1.svg);
+  mask-repeat: no-repeat;
+  mask-position: center;
+  width: 100%;
+  height: 700px;
+  position: absolute;
+}
+@media  (max-width: 800px) {
+  /* .rectangle1 {
+    display: flex;
+    top: 0;
+    position: absolute;
+    height:305px;
+} */
+}
+@media  (max-width: 800px) {
+  /* .rectangle1 {
+    display: flex;
+    top: 0;
+    position: absolute;
+    height:305px;
+} */
+}
+@keyframes rotate3d {
+  0%{
+        transform: rotate3d(1, 1, 11, 1deg);
+  }
+  100%{
+        transform: rotate3d(1, 1, 11, 45deg);
+  }
+}
+.rotate{
+  animation: rotate3d 500ms cubic-bezier(0.550, 0.085, 0.680, 0.530) both ;
+}
+.scrollAnimate{
+    view-timeline: --scroll-tl;
+    animation-timeline: --scroll-tl;
+    animation-delay: cover 50%;
+    animation-range: cover 10% cover 35%;
+}
+.scrollAnimate2{
+    view-timeline: --scroll-tl;
+    animation-timeline: --scroll-tl;
+    animation-delay: cover 30%;
+    animation-range: cover 10% cover 45%;
 }
