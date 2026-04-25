@@ -247,17 +247,7 @@ font-weight: 400;
 .rotate{
   animation: rotate3d 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both ;
 }
-.mandalaCont{
-  width: 50%;
-}
-.mandala{
-  width: 100%;
-  right: 50%;
-  height: auto;
-  animation: spin 40s linear infinite;
 
- 
-}
  .section3{
     padding: 0;
   }
@@ -267,11 +257,22 @@ font-weight: 400;
 }
 
 
-.rightBlock{
+.mandalaCont{
   width: 50%;
+}
+.mandala{
+  width: 100%;
+  right: 45%;
+  height: auto;
+  animation: spin 40s linear infinite;
+
+ 
 }
 .section3{
   padding-top: 0;
+}
+.rightBlock{
+  width: 70%;
 }
 @media  (max-width: 1400px) {
  .animatedCircleCont img{
@@ -356,4 +357,7 @@ padding: 0 15px 0 15px;
     animation-timeline: --scroll-tl;
     animation-delay: cover 30%;
     animation-range: cover 10% cover 45%;
+}
+.hiwFlex{
+  
 }

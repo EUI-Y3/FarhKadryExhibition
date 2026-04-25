@@ -16,10 +16,11 @@ import herologo from '../assets/herologo.svg'
 import Header from '../components/layout/header';
 import Button from '../components/common/button';
 import HeadingBlock from '../components/common/heading';
+import HowItWorks from '../components/common/hiw';
 const Home = () => {
     return ( <>
     <Header />
-    <SeamlessScene/>
+    {/* <SeamlessScene/> */}
     <main>
     <div className="secBg scalein2 ">
         <img src={frame1} alt=""  />
@@ -90,6 +91,14 @@ Book workshops to learn ancestral techniques passed down through generations of 
         <HeadingBlock 
         style1="light left"
         heading="How It works" />
+        <div className="hiwFlex">
+        <HowItWorks
+        icon ={hiwicon1}
+        number="1"
+        title="Browse our vendors and categories"
+        desc="Explore upcoming and current Vendors across Egypt. Filter by location, date, and craft category to find events that match your interests."
+        />
+        </div>
         </div>
     </section>
    </div>
