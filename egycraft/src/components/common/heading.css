@@ -1,0 +1,16 @@
+.headingBlock{
+    display: flex;
+    flex-direction: column;
+}
+.left{
+    align-items: start;
+}
+.left h1{
+    text-align: left;
+}
+.dark h1{
+    color: #DC4649;
+}
+.light h1{
+    color: #FFF4E2;
+}

@@ -14,9 +14,8 @@
   max-height: 100vh;
   display: block;
 }
-@media (max-width: 892px){
+@media (max-width: 692px){
    .wrapper {
-
  flex-direction: column;
 }
 }
