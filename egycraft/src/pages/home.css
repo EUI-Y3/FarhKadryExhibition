@@ -401,3 +401,10 @@ background: #007E7A;
     animation-delay: cover 30%;
     animation-range: cover 10% cover 45%;
 }
+.pageDecor{
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: auto;
+  z-index: 1;
+}
