@@ -1,4 +1,6 @@
 import React from 'react';
+import { useState, useEffect } from 'react';
+
 import SeamlessScene from '../components/common/SeamlessScene';
 import Model1 from '../components/common/model';
 import './home.css'
@@ -20,7 +22,18 @@ import Header from '../components/layout/header';
 import Button from '../components/common/button';
 import HeadingBlock from '../components/common/heading';
 import HowItWorks from '../components/common/hiw';
+import HomeS2 from '../sections/homesec1';
+import { supabase } from '../supabase';
 const Home = () => {
+
+    useEffect(()=>{
+        const getSections = async ()=> {
+        const res = await supabase.from ("section").select("*");
+        console.log(res)
+        }
+        getSections()
+    },[])
+
     return ( <>
     <Header />
     {/* <SeamlessScene/> */}
@@ -63,7 +76,7 @@ const Home = () => {
         </div>
     </div>
     <div className="secContainer sec2Cont scrollAnimate2">
-       
+       <HomeS2 />
     </div>
        <div className="secContainer sec3Cont ">
      <section className='section2 section3'>
