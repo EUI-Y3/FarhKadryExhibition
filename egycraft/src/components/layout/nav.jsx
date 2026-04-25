@@ -5,7 +5,7 @@ const Navigation = () => {
     return ( <>
     <ul>
             <Navitem style1="asideNav" title="Home" link="/" />
-            <Navitem style1="asideNav" title="Home" link="/" />
+            <Navitem style1="asideNav" title="Exhibition details" link="eventdetails" />
 
     </ul>
     </> );
