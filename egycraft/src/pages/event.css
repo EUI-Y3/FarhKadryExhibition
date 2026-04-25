@@ -3,3 +3,8 @@
     height: 31.0308px;
     justify-self: center;
 }
+.detailsFlex{
+    display: flex;
+align-items: center;
+gap: 63px;
+}

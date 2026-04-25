@@ -24,6 +24,7 @@ import HeadingBlock from '../components/common/heading';
 import HowItWorks from '../components/common/hiw';
 import HomeS2 from '../sections/homesec1';
 import { supabase } from '../supabase';
+import ExhibitionDetails from '../sections/eventDetails';
 const Event = () => {
     return ( <>
     <Header />
@@ -48,9 +49,7 @@ const Event = () => {
     </section>
     </div>
     <div className="secContainer modelCont">
-       <div className="detailsFlex">
-        
-       </div>
+        <ExhibitionDetails />
     </div>
     <div className="secContainer sec2Cont scrollAnimate2">
        <HomeS2 />
