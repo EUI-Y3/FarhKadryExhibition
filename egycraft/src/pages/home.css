@@ -297,6 +297,25 @@ font-weight: 400;
 .modelCont{
   background-color: #FFF4E2;
 }
+.homeS2Cont{
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+.homeS2Cont button{
+  width: min-content;
+}
+.homeS2Decor1 , .homeS2Decor2{
+  position: absolute;
+}
+.homeS2Decor2{
+  right: 0;
+  top: 20px;
+}
+.homeS2Decor1{
+  right: 100px;
+  bottom: -100px;
+}
 @media  (max-width: 1010px) {
 .section2{
   flex-direction: column;

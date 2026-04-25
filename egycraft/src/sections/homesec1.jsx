@@ -6,6 +6,9 @@ import logodecor2 from '../assets/decor.svg'
 import HeadingBlock from '../components/common/heading';
 import sec2img from '../assets/sec2img.png'
 import Button from '../components/common/button';
+import decor2 from '../assets/decoricon01.svg'
+import decor3 from '../assets/decoricon02.svg'
+
 
 const HomeS2 = () => {
 
@@ -34,17 +37,19 @@ const HomeS2 = () => {
 
     return (
         <section className='section2'>
-            <div>
+            <div className='homeS2Cont'>
                 <HeadingBlock 
                     style1="dark left floatIn scrollAnimate"
                     heading={section.title}
                     img={logodecor2}  
                 />
+            <img className='homeS2Decor1 float' src={decor2} alt="" />
+            <img className='homeS2Decor2 float' src={decor3} alt="" />
 
                 <p>{section.description}</p>
 
                 <Button 
-                    style1="size2 blue" 
+                    style1="size2 beige" 
                     cta="Book my ticket" 
                     link="/booking" 
                 />

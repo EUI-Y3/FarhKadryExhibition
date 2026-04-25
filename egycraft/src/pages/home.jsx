@@ -26,13 +26,13 @@ import HomeS2 from '../sections/homesec1';
 import { supabase } from '../supabase';
 const Home = () => {
 
-    useEffect(()=>{
-        const getSections = async ()=> {
-        const res = await supabase.from ("section").select("*");
-        console.log(res)
-        }
-        getSections()
-    },[])
+    // useEffect(()=>{
+    //     const getSections = async ()=> {
+    //     const res = await supabase.from ("section").select("*");
+    //     console.log(res)
+    //     }
+    //     getSections()
+    // },[])
 
     return ( <>
     <Header />
@@ -111,7 +111,6 @@ const Home = () => {
     </section>
    </div>
     </main>
-
 
     </> );
 }
