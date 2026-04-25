@@ -91,6 +91,8 @@ h6{
   flex-direction: column;
   /* left: -90px; */
   width: 100%;
+  max-height: 1880px;
+    overflow: hidden;
   margin-top: 100px;
   /* transform: scaleX(1.1); */
   animation: scale-in-2 800ms ease-in-out both ;
@@ -277,17 +279,13 @@ font-weight: 400;
   width: 70%;
   padding: 200px 0 100px 0;
 }
-@media  (max-width: 1400px) {
+@media  (max-width: 1460px) {
  .animatedCircleCont img{
   width: 100%;
   position: absolute;
   bottom: 30%;
   left: 0px;
   animation: spin 40s linear infinite;
-}
-.secBg {
-    max-height: 1480px;
-    overflow: hidden;
 }
 }
 .sec2imgCont{
