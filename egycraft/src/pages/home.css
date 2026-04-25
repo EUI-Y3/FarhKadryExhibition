@@ -91,7 +91,7 @@ h6{
   flex-direction: column;
   /* left: -90px; */
   width: 100%;
-  /* margin-top: 400px; */
+  margin-top: 100px;
   /* transform: scaleX(1.1); */
   animation: scale-in-2 800ms ease-in-out both ;
 }
@@ -114,6 +114,7 @@ section{
 }
 .section1{
   display: flex;
+  margin-top: 100px;
   justify-content: center;
   align-items: center;
   flex-direction: column;
@@ -250,6 +251,7 @@ font-weight: 400;
 
  .section3{
     padding: 0;
+    gap: 20px;
   }
 @keyframes spin {
   from { transform: rotate(0deg); }
@@ -259,20 +261,21 @@ font-weight: 400;
 
 .mandalaCont{
   width: 50%;
+  height: 900px;
+      max-height: 900px;
 }
 .mandala{
-  width: 100%;
-  right: 45%;
-  height: auto;
+  height: 100%;
+  right: 100%;
+  scale: 1;
   animation: spin 40s linear infinite;
-
- 
 }
 .section3{
   padding-top: 0;
 }
 .rightBlock{
   width: 70%;
+  padding: 200px 0 100px 0;
 }
 @media  (max-width: 1400px) {
  .animatedCircleCont img{
@@ -296,7 +299,7 @@ font-weight: 400;
 .modelCont{
   background-color: #FFF4E2;
 }
-@media  (max-width: 800px) {
+@media  (max-width: 1010px) {
 .section2{
   flex-direction: column;
 }
@@ -326,22 +329,46 @@ font-weight: 400;
     opacity: 1;
   }
 } */
+.mandalaCont {
+    width: 50%;
+    height: auto;
+}
+.rightBlock{
+  width: 100%;
+  padding: 0px 0 100px 0;
+}
+.mandala{
+  height: auto;
+  width: 100%;
+  right: 0;
+  height: auto;
+  scale: 2;
+  bottom: 190px;
+}
 .sec2Cont{
   bottom: 0px;
 }
 }
-@media (max-width: 400px) {
+@media (max-width: 600px) {
   .secContainer{
   padding: 0 15px;
 }
 .sec2Cont{
   bottom: 0px;
 }
+.mandala{
+  height: auto;
+  width: 100%;
+  right: 0;
+  height: auto;
+  scale: 2;
+  bottom: 90px;
+}
 }
 .sec3Cont{
     border-radius: 0 0 100px 100px;
 background: #007E7A;
-padding: 0 15px 0 15px;
+/* padding: 0 15px 0 15px; */
  /* position: sticky;
   top: 0;
   z-index: 5; */
@@ -357,7 +384,4 @@ padding: 0 15px 0 15px;
     animation-timeline: --scroll-tl;
     animation-delay: cover 30%;
     animation-range: cover 10% cover 45%;
-}
-.hiwFlex{
-  
 }

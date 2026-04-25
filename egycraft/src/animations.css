@@ -61,6 +61,7 @@
 }
 
 .scaleIn {
+  transform-origin: center;
 	animation: scale-in-center 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) 2s both;
 }
 @keyframes scale-in-center {
@@ -70,8 +71,8 @@
     opacity: 1;
   }
   100% {
-    -webkit-transform: scale(1.2);
-            transform: scale(1.2);
+    -webkit-transform: scale(1);
+            transform: scale(1);
     opacity: 1;
   }
 }

@@ -3,6 +3,9 @@ import SeamlessScene from '../components/common/SeamlessScene';
 import Model1 from '../components/common/model';
 import './home.css'
 import './../animations.css'
+import hiwicon1 from './../assets/hiwIcon03.svg'
+import hiwicon2 from './../assets/hiwIcon02.svg'
+import hiwicon3 from './../assets/hiwIcon01.svg'
 
 import logoicon from '../assets/logo2.svg'
 import logodecor1 from '../assets/tashkil.svg'
@@ -81,7 +84,7 @@ Book workshops to learn ancestral techniques passed down through generations of 
         </div>
     </section>
     </div>
-       <div className="secContainer sec3Cont moveIn scrollAnimate2">
+       <div className="secContainer sec3Cont ">
      <section className='section2 section3'>
 <div className="mandalaCont">
         <img className='mandala' src={mandala} alt="" />
@@ -96,6 +99,18 @@ Book workshops to learn ancestral techniques passed down through generations of 
         icon ={hiwicon1}
         number="1"
         title="Browse our vendors and categories"
+        desc="Explore upcoming and current Vendors across Egypt. Filter by location, date, and craft category to find events that match your interests."
+        />
+        <HowItWorks
+        icon ={hiwicon2}
+        number="2"
+        title="Book Your Tickets"
+        desc="Explore upcoming and current Vendors across Egypt. Filter by location, date, and craft category to find events that match your interests."
+        />
+        <HowItWorks
+        icon ={hiwicon3}
+        number="3"
+        title="Attend the event seamlessly"
         desc="Explore upcoming and current Vendors across Egypt. Filter by location, date, and craft category to find events that match your interests."
         />
         </div>

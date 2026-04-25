@@ -1,8 +1,9 @@
 import React from 'react';
+import './hiw.css'
 const HowItWorks = (props) => {
     return ( <>
-    <div className="hiwListitem">
-<div className="hiwHead">
+    <div className="hiwListitem moveIn scrollAnimate2">
+<div className="hiwHead scaleIn  scrollAnimate">
     <img src={props.icon} alt="" />
             <h1>
                 {props.number}
