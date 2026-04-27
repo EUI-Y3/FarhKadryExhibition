@@ -36,7 +36,7 @@ const Home = () => {
 
     return ( <>
     <Header />
-    {/* <SeamlessScene/> */}
+    <SeamlessScene/>
     <main>
     <div className="secBg scalein2 ">
         <img src={frame1} alt=""  />

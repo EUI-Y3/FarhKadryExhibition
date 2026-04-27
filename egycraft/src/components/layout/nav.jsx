@@ -1,14 +1,35 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import Navitem from '../common/navitem';
-import './nav.css'
-const Navigation = () => {
-    return ( <>
-    <ul>
-            <Navitem style1="asideNav" title="Home" link="/" />
-            <Navitem style1="asideNav" title="Exhibition details" link="exhibitiondetails" />
+import { supabase } from './../../supabase';
+import './nav.css';
 
-    </ul>
-    </> );
-}
- 
+const Navigation = () => {
+    const [navItems, setNavItems] = useState([]);
+
+    useEffect(() => {
+        const getNavItems = async () => {
+            const { data } = await supabase
+                .from('navigation')
+                .select('*');
+
+            setNavItems(data || []);
+        };
+
+        getNavItems();
+    }, []);
+
+    return (
+        <ul>
+            {navItems.map((item) => (
+                <Navitem
+                    key={item.id}
+                    style1="asideNav"
+                    title={item.name}
+                    link={item.link}
+                />
+            ))}
+        </ul>
+    );
+};
+
 export default Navigation;

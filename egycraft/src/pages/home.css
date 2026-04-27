@@ -56,8 +56,8 @@ main{
     opacity: 1;
   }
   100% {
-    -webkit-transform: scale(1.8);
-            transform: scale(1.8);
+    -webkit-transform: scale(1.4);
+            transform: scale(1.4);
     opacity: 1;
   }
 }

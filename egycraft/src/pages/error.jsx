@@ -6,7 +6,8 @@ import HeadingBlock from '../components/common/heading';
 
 const Error = () => {
     return ( <>
-    <div className="secContainer">
+    <main className='body2'>
+        <div className="secContainer">
         <section className='section2'>
             <img src={errormsg} alt="" />
             <img className='pageDecor float' src={decor} alt="" />
@@ -19,6 +20,7 @@ const Error = () => {
             </div>
         </section>
     </div>
+    </main>
     </> );
 }
  
