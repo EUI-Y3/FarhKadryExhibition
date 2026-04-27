@@ -1,5 +1,7 @@
 import React from 'react';
 import { useState, useEffect } from 'react';
+import ImageTrail from './../components/common/imageTrail'
+
 import './event.css'
 import SeamlessScene from '../components/common/SeamlessScene';
 import Model1 from '../components/common/model';
@@ -13,7 +15,6 @@ import illus1 from '../assets/horseillus1.svg'
 import logodecor1 from '../assets/tashkil.svg'
 import logodecor2 from '../assets/decor.svg'
 import circle from '../assets/circle1.svg'
-import MouseTrailSVG from '../components/common/MouseTrailSVG'
 import mandala from '../assets/mandala1.svg'
 import frame1 from '../assets/frame2.svg'
 import sec2img from '../assets/sec2img.png'
@@ -26,6 +27,7 @@ import HomeS2 from '../sections/homesec1';
 import { supabase } from '../supabase';
 import ExhibitionDetails from '../sections/eventDetails';
 const Event = () => {
+    const [trailKey, setTrailKey] = useState(0);
     return ( <>
     <Header />
     {/* <SeamlessScene/> */}
@@ -56,36 +58,24 @@ const Event = () => {
     </div>
        <div className="secContainer sec3Cont ">
      <section className='section2 section3'>
-<div className="mandalaCont">
-        <img className='mandala' src={mandala} alt="" />
+
+<div style={{ height: '500px', position: 'relative', overflow: 'hidden'}}>
+  <ImageTrail
+    key={trailKey}
+    items={[
+      'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSM3IODnlm7IJ9sgoh9oNaHXx-tbLMK8vDXmQ&s',
+      'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSM3IODnlm7IJ9sgoh9oNaHXx-tbLMK8vDXmQ&s',
+      'https://picsum.photos/id/1025/300/300',
+      'https://picsum.photos/id/1026/300/300',
+      'https://picsum.photos/id/1027/300/300',
+      'https://picsum.photos/id/1028/300/300',
+      'https://picsum.photos/id/1029/300/300',
+      'https://picsum.photos/id/1030/300/300',
+      // ...
+    ]}
+    variant="3"
+  />
 </div>
-        <div className="rightBlock">
-        <HeadingBlock 
-        style1="light left"
-        heading="How It works"
-        img={logodecor2}
-         />
-        <div className="hiwFlex">
-        <HowItWorks
-        icon ={hiwicon1}
-        number="1"
-        title="Browse our vendors and categories"
-        desc="Explore upcoming and current Vendors across Egypt. Filter by location, date, and craft category to find events that match your interests."
-        />
-        <HowItWorks
-        icon ={hiwicon2}
-        number="2"
-        title="Book Your Tickets"
-        desc="Explore upcoming and current Vendors across Egypt. Filter by location, date, and craft category to find events that match your interests."
-        />
-        <HowItWorks
-        icon ={hiwicon3}
-        number="3"
-        title="Attend the event seamlessly"
-        desc="Explore upcoming and current Vendors across Egypt. Filter by location, date, and craft category to find events that match your interests."
-        />
-        </div>
-        </div>
     </section>
    </div>
     </main>
