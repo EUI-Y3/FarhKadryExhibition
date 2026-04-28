@@ -26,6 +26,7 @@ import HomeS2 from '../sections/homesec1';
 import { supabase } from '../supabase';
 import ExhibitionDetails from '../sections/eventDetails';
 import CountdownTimer from '../sections/countdown';
+import ExhibitionMap from '../sections/ExhibitionMap';
 const Event = () => {
     const [trailKey, setTrailKey] = useState(0);
     return ( <>
@@ -111,8 +112,7 @@ const Event = () => {
         </div>
     </div>
     <div className="map1">
-        <iframe class="map3D" title="Cairo International Convention Center map" src="https://rivistaevents.com/expo/client/map.php" frameborder="0"></iframe>
-    
+<ExhibitionMap />    
     </div>
     </section>
    </div>
