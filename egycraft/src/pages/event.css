@@ -83,7 +83,30 @@
     width: 100%;
     height: 100%;
 }
+.experienceSec{
+    display: flex;
+    flex-direction: row;
+}
 .map3D{
     width: 1287.342px;
 height: 1258.242px;
+}
+.mandalaCont2{
+    width: 30%;
+}
+.mandalaCont2 .mandala2{
+    right: -100%;
+}
+.experienceSecCont{
+    padding: 0;
+}
+.experienceCont{
+    display: flex;
+    flex-direction: column;
+    gap: 52px;
+    justify-content: center;
+    align-items: center;
+}
+.experienceCont h4{
+    text-align: center;
 }

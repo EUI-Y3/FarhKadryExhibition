@@ -112,7 +112,28 @@ const Event = () => {
     </div>
     <div className="map1">
         <iframe class="map3D" title="Cairo International Convention Center map" src="https://rivistaevents.com/expo/client/map.php" frameborder="0"></iframe>
+    
     </div>
+    </section>
+   </div>
+   <div className="secContainer sec3Cont galleryCont experienceSecCont">
+     <section className='section2 eventGallery experienceSec'>
+        <div className="mandalaCont mandalaCont2">
+        <img className='mandala' src={mandala} alt="" />
+        </div>
+        <div className="experienceCont">
+            <HeadingBlock 
+        style1="light center decor"
+        heading="Don’t Miss The Experience."
+        />
+        <h4 className='light'>
+            Secure your spot at Egypt's most anticipated craft celebration. Limited early bird tickets available.
+        </h4>
+        <Button style1="blue size2"  cta="Book my ticket" />
+        </div>
+        <div className="mandalaCont mandalaCont2">
+        <img className='mandala mandala2' src={mandala} alt="" />
+        </div>
     </section>
    </div>
     </main>

@@ -152,11 +152,18 @@ font-style: italic;
 font-weight: 400;
 line-height: 140%; /* 44.8px */
 }
+h4{
+font-size: 24px;
+font-weight: 400;
+}
 p{
   overflow: hidden;
 font-size: 20px;
 margin: 20px 0;
 font-weight: 400;
+}
+.light{
+  color:  #FFF4E2;;
 }
 .logodecor1{
   position: absolute;
