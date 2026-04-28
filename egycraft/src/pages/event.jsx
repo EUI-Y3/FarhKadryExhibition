@@ -1,6 +1,7 @@
 import React from 'react';
 import { useState, useEffect } from 'react';
 import ImageTrail from './../components/common/imageTrail'
+// import {grid} from './../assets/grid.svg'
 
 import './event.css'
 import SeamlessScene from '../components/common/SeamlessScene';
@@ -33,7 +34,7 @@ const Event = () => {
     <Header />
     <SeamlessScene/>
     <main>
-    <div className="secBg scalein2 ">
+    <div className="secBg secBg2 scalein2 ">
         <img src={frame1} alt=""  />
 
             </div>
@@ -50,10 +51,11 @@ const Event = () => {
     </div>
     <div className="secContainer modelCont cardsSec">
         <ExhibitionDetails />
+        
         <CountdownTimer />
     </div>
     
-       <div className="secContainer sec3Cont ">
+       <div className="secContainer sec3Cont galleryCont">
      <section className='section2 eventGallery'>
         <HeadingBlock 
         style1="light center decor"
@@ -76,6 +78,19 @@ const Event = () => {
     variant="3"
   />
 </div>
+    </section>
+   </div>
+   <div className="secContainer sec2Cont  modelCont mapCont">
+    <section className='section2 mapSec'>
+    <div className="map1">
+        <div className="left">
+            <HeadingBlock 
+        style1="dark left"
+        heading="Getting There"
+        subheading ="Get Full directions to our Exhibition"
+        />
+        </div>
+    </div>
     </section>
    </div>
     </main>
