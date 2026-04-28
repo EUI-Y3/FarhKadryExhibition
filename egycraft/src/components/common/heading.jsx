@@ -9,9 +9,9 @@ const HeadingBlock = (props) => {
     </h1>
         <img src={img} alt="" />
 
-    <h2>
+    <h3>
 {props.subheading}
-    </h2>
+    </h3>
     </div>
     </>  );
 }

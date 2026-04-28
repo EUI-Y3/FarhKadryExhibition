@@ -5,6 +5,21 @@
 }
 .detailsFlex{
     display: flex;
-align-items: center;
-gap: 63px;
+    align-items: center;
+    gap: 63px;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 20px 0;
+}
+.eventGallery{
+    display: flex;
+    flex-direction: column;
+}
+.eventSec1{
+    margin-top: 200px;
+}
+.cardsSec{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
 }

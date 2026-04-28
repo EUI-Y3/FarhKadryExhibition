@@ -26,22 +26,20 @@ import HowItWorks from '../components/common/hiw';
 import HomeS2 from '../sections/homesec1';
 import { supabase } from '../supabase';
 import ExhibitionDetails from '../sections/eventDetails';
+import CountdownTimer from '../sections/countdown';
 const Event = () => {
     const [trailKey, setTrailKey] = useState(0);
     return ( <>
     <Header />
-    {/* <SeamlessScene/> */}
+    <SeamlessScene/>
     <main>
     <div className="secBg scalein2 ">
         <img src={frame1} alt=""  />
-                {/* <div className="rectangle1"></div> */}
 
             </div>
     <div className="secContainer">
-        {/* <div className="mask1"></div> */}
         <section className='section1 '>
-            
-        <div className="heroCont1">
+        <div className="heroCont1 eventSec1">
             <img src={illus1} alt="fatima hand logo" />
             <HeadingBlock
             heading="Exhibition Details"
@@ -50,28 +48,30 @@ const Event = () => {
         </div>
     </section>
     </div>
-    <div className="secContainer modelCont">
+    <div className="secContainer modelCont cardsSec">
         <ExhibitionDetails />
+        <CountdownTimer />
     </div>
-    <div className="secContainer sec2Cont scrollAnimate2">
-       <HomeS2 />
-    </div>
+    
        <div className="secContainer sec3Cont ">
-     <section className='section2 section3'>
-
+     <section className='section2 eventGallery'>
+        <HeadingBlock 
+        style1="light center decor"
+        heading="Our Gallery"
+        subheading ="Hover to reveal!"
+        />
 <div style={{ height: '500px', position: 'relative', overflow: 'hidden'}}>
   <ImageTrail
     key={trailKey}
     items={[
-      'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSM3IODnlm7IJ9sgoh9oNaHXx-tbLMK8vDXmQ&s',
-      'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSM3IODnlm7IJ9sgoh9oNaHXx-tbLMK8vDXmQ&s',
-      'https://picsum.photos/id/1025/300/300',
-      'https://picsum.photos/id/1026/300/300',
-      'https://picsum.photos/id/1027/300/300',
-      'https://picsum.photos/id/1028/300/300',
-      'https://picsum.photos/id/1029/300/300',
-      'https://picsum.photos/id/1030/300/300',
-      // ...
+      'https://i.pinimg.com/1200x/4a/dd/7e/4add7e6985caeffe31364c772e2ab20f.jpg',
+      'https://i.pinimg.com/736x/bf/83/bf/bf83bfc5dc7ccea47985f8aadbdcb082.jpg',
+      'https://i.pinimg.com/1200x/c1/bc/b3/c1bcb349a3cb1af0d78a51a1d5321320.jpg',
+      'https://i.pinimg.com/736x/48/4a/21/484a218cf250f75d5d7e91fe5eea7bc7.jpg',
+      'https://i.pinimg.com/736x/45/90/5f/45905f42e9a38465a034a69229b7fbc2.jpg',
+      'https://i.pinimg.com/1200x/2a/91/df/2a91df81616be3bacd1882fbe5e27ba4.jpg',
+      'https://i.pinimg.com/736x/2d/b2/ac/2db2ac1b6e9fd041c3bd9fb4b0d6673d.jpg',
+      'https://i.pinimg.com/736x/ca/cd/a6/cacda646df2c0ef73013bbd6f19a3109.jpg',
     ]}
     variant="3"
   />

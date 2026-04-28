@@ -2,6 +2,14 @@
     display: flex;
     flex-direction: column;
 }
+.headingBlock h1{
+    line-height: 100%;
+}
+.headingBlock h2{
+    font-size: 48px;
+    font-style: italic;
+    font-weight: 500;
+}
 .headingBlock img{
     width: 0 px;
     height: 0px;
@@ -20,7 +28,13 @@
 .center h1{
     text-align: center;
 }
-.left h1{
+.center h3{
+    text-align: center;
+}
+.left h3{
+    text-align: left;
+}
+.left h3{
     text-align: left;
 }
 .dark h1{
@@ -28,4 +42,8 @@
 }
 .light h1{
     color: #FFF4E2;
+}
+.light h3{
+    color: var(--mainBg, #FFF4E2);
+
 }

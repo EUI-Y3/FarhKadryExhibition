@@ -24,6 +24,7 @@ import HeadingBlock from '../components/common/heading';
 import HowItWorks from '../components/common/hiw';
 import HomeS2 from '../sections/homesec1';
 import { supabase } from '../supabase';
+import FatimaHand from '../components/common/fatimahand';
 const Home = () => {
 
     // useEffect(()=>{
@@ -49,7 +50,8 @@ const Home = () => {
             
         <div className="heroCont1">
             <div className="logoicon">
-            <img src={logoicon} alt="fatima hand logo" />
+                <FatimaHand />
+            {/* <img src={logoicon} alt="fatima hand logo" /> */}
             </div>
             <div className="logoCont">
                 <MouseTrailSVG />

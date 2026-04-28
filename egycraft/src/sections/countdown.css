@@ -1,0 +1,32 @@
+.countdownCont{
+    display: flex;
+    width: 100%;
+    padding: 100px 40px;
+    justify-content: center;
+    max-width: 949px;;
+    flex-wrap: wrap;
+    gap: 18px;
+}
+.timeFlex{
+    display: flex;
+    flex-direction: column;
+    width: 150px;
+    justify-content: center;
+    align-items: center;
+}
+.timeFlex h1{
+    font-size: 88px;
+    line-height: 90%;
+    color: #18466F;
+}
+.timeFlex h5{
+    color: #1C1C35;
+    text-align: center;
+    font-feature-settings: 'dlig' on;
+    font-family: "Alegreya Sans";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    text-transform: uppercase;
+    line-height: normal;
+}
