@@ -8,9 +8,7 @@ import SeamlessScene from '../components/common/SeamlessScene';
 import Model1 from '../components/common/model';
 import './home.css'
 import './../animations.css'
-import hiwicon1 from './../assets/hiwIcon03.svg'
-import hiwicon2 from './../assets/hiwIcon02.svg'
-import hiwicon3 from './../assets/hiwIcon01.svg'
+import locIcon from '../assets/locationicon.svg'
 
 import illus1 from '../assets/horseillus1.svg'
 import logodecor1 from '../assets/tashkil.svg'
@@ -83,13 +81,37 @@ const Event = () => {
    <div className="secContainer sec2Cont  modelCont mapCont">
     <section className='section2 mapSec'>
     <div className="map1">
-        <div className="left">
+        <div className="mapLeft">
             <HeadingBlock 
         style1="dark left"
         heading="Getting There"
-        subheading ="Get Full directions to our Exhibition"
         />
+        <div className="mapAddress"> 
+            <img src={locIcon} alt="location icon" />
+            <div>
+                <h3>Address</h3>
+                    <p>
+                        Cairo International Convention Center
+                        El-Nasr Road, Nasr City, Cairo Governorate
+                    </p>
+            </div>
         </div>
+        </div>
+        <div className='firstMap' >
+          <iframe
+            title="Cairo International Convention Center map"
+            frameBorder="0"
+            scrolling="no"
+            marginHeight="0"
+            marginWidth="0"
+            src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBVizdQeh3udy11xDc5Ao2YStR2gLc-rfc&amp;q=El-Nasr%20Road%2C%20Nasr%20City%2C%20Cairo%20Governorate&amp;maptype=roadmap&amp;zoom=14"
+          >
+            <a href="https://www.mapsdirections.info/pl/mapa-populacji/">Check Location</a>
+          </iframe>
+        </div>
+    </div>
+    <div className="map1">
+        <iframe class="map3D" title="Cairo International Convention Center map" src="https://rivistaevents.com/expo/client/map.php" frameborder="0"></iframe>
     </div>
     </section>
    </div>
