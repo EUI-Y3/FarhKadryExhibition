@@ -103,6 +103,13 @@ height: 1258.242px;
     right:-40%;
     right: -26%
 }
+.faqSec{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    justify-content: flex-start;
+}
 .experienceSecCont {
     padding:  0;
 }
@@ -116,6 +123,7 @@ height: 1258.242px;
 .experienceCont h4{
     text-align: center;
 }
+
 @media (max-width: 1440px) {
 .mandalaCont2 .mandala{
   height: auto;

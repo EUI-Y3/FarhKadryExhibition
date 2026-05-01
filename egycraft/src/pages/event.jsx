@@ -28,6 +28,7 @@ import ExhibitionDetails from '../sections/eventDetails';
 import CountdownTimer from '../sections/countdown';
 import ExhibitionMap from '../sections/ExhibitionMap';
 import Footer from '../components/layout/footer';
+import FAQ from '../sections/faq';
 const Event = () => {
     const [trailKey, setTrailKey] = useState(0);
     return ( <>
@@ -139,6 +140,15 @@ const Event = () => {
         <div className="mandalaCont mandalaCont2">
         <img className='mandala mandala2' src={mandala} alt="" />
         </div>
+    </section>
+   </div>
+   <div className="secContainer sec2Cont">
+    <section className="section2 faqSec">
+        <HeadingBlock
+        style1="dark left"
+        heading="Frequently asked questIons"
+        />
+        <FAQ />
     </section>
    </div>
     </main>
