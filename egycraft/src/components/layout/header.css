@@ -39,3 +39,34 @@ header .logo{
     height: 70px;
     box-sizing: border-box;
 }
+
+.burgermenu{
+    max-height: 34px;
+    display: none;
+}
+.btnFlex{
+    display: flex;
+align-items: center;
+gap: 22px;
+}
+.burgernav{
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+}
+.popUp ul{
+    flex-direction: column;
+    gap: 22px;
+    padding: 100px 15px;
+    box-sizing: border-box;
+    width: 100%;
+    align-items: center;
+}
+@media (max-width: 900px){
+.navCont2{
+    display: none;
+}
+.burgermenu{
+    display: flex;
+}
+}

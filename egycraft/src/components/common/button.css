@@ -25,10 +25,7 @@ button h6{
     color:#FFF4E2 ;
     font-weight: 400;
 }
-.blue::after {
-    content: "";
-    position: absolute;
-    inset: 0;
+.blue {
     background-image: url('../../assets/btn1before.svg');
     background-size: 100% 100%;
     background-repeat: no-repeat;
@@ -39,21 +36,21 @@ button h6{
     z-index: 1;
     transition: all 200ms ease-in;
 }
-.blue .beige img{
-    z-index: 3;
+.blue img .beige img{
+    z-index: 2;
     transition: all 500ms ease-in-out;
 }
 .blue:hover h6{
     /* color: var(--primaryNavy, #1C1C35); */
 }
-.blue:hover::after {
+.blue:hover {
     background-image: url('../../assets/btn1before2.svg');
     box-shadow: 0 -7px 0 0 rgba(0, 0, 0, 0.25) inset;
 }
 .blue:hover, .beige:hover{
     transform: translateY(-2px);
 }
-.blue:hover, .beige:hover img{
+.blue:hover img .beige:hover img{
     transform: rotate(359deg);
 }
 .beige{
