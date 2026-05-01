@@ -37,10 +37,12 @@
     bottom: 100px;
     flex-direction: column;
     display: flex;
+        padding-bottom: 100px;
 }
 .mapSec{
     padding-top: 200px;
     flex-direction: column;
+    gap: 40px;
 }
 .map1{
     display: flex;
@@ -86,6 +88,8 @@
 .experienceSec{
     display: flex;
     flex-direction: row;
+     gap: 62px;
+         padding-top: 0;
 }
 .map3D{
     width: 1287.342px;
@@ -93,12 +97,14 @@ height: 1258.242px;
 }
 .mandalaCont2{
     width: 30%;
+    display: block;
 }
 .mandalaCont2 .mandala2{
-    right: -100%;
+    right:-40%;
+    right: -26%
 }
-.experienceSecCont{
-    padding: 0;
+.experienceSecCont {
+    padding:  0;
 }
 .experienceCont{
     display: flex;
@@ -109,4 +115,61 @@ height: 1258.242px;
 }
 .experienceCont h4{
     text-align: center;
+}
+@media (max-width: 1440px) {
+.mandalaCont2 .mandala{
+  height: auto;
+  width: 100%;
+  display:flex ;
+  right: 0;
+  scale: 1;
+  bottom: 0px;
+
+}
+.experienceSecCont {
+    padding: 100px 0;
+}
+.mandalaCont2{
+    display: flex;
+    height: max-content;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+    min-height: 300px;
+    max-height: 300px;
+}
+.mandalaCont2 .mandala2{
+    display:flex ;
+    left: 0;
+    bottom: 0;
+}
+.experienceSec {
+    gap: 40px;
+    padding: 0 40px;
+    min-height: 300px;
+    max-height: 300px;
+}
+}
+@media (max-width: 900px) {
+.experienceCont {
+    gap: 19px;
+}
+.experienceSec {
+    gap: 10px;
+    padding: 0 40px;
+}
+.experienceSecCont {
+    padding: 100px 0;
+}
+}
+@media (max-width: 650px) {
+.mandalaCont2{
+    display: none;
+}
+.experienceSecCont {
+    padding: 100px 0;
+}
+}
+.map2{
+    flex-direction: column;
 }

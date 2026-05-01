@@ -25,6 +25,7 @@ import HowItWorks from '../components/common/hiw';
 import HomeS2 from '../sections/homesec1';
 import { supabase } from '../supabase';
 import FatimaHand from '../components/common/fatimahand';
+import Footer from '../components/layout/footer';
 const Home = () => {
 
     // useEffect(()=>{
@@ -83,7 +84,7 @@ const Home = () => {
        <div className="secContainer sec3Cont ">
      <section className='section2 section3'>
 <div className="mandalaCont">
-        <img className='mandala' src={mandala} alt="" />
+        <img className='mandala homeMandala' src={mandala} alt="" />
 </div>
         <div className="rightBlock">
         <HeadingBlock 
@@ -113,6 +114,7 @@ const Home = () => {
     </section>
    </div>
     </main>
+    <Footer />
 
     </> );
 }

@@ -278,6 +278,13 @@ font-weight: 400;
   scale: 1;
   animation: spin 40s linear infinite;
 }
+.homeMandala{
+    right: 81%;
+    height: 100%;
+  /* right: 100%; */
+  scale: 1.5;
+  animation: spin 40s linear infinite;
+}
 .section3{
   padding-top: 0;
 }
@@ -316,11 +323,19 @@ font-weight: 400;
 }
 .homeS2Decor2{
   right: 0;
-  top: 20px;
+  top: -67px
 }
 .homeS2Decor1{
   right: 100px;
   bottom: -100px;
+}
+@media  (max-width: 1324px) {
+.homeMandala{
+
+  scale:0.8
+  /* bottom: 190px; */
+}
+
 }
 @media  (max-width: 1010px) {
 .section2{
@@ -368,6 +383,14 @@ font-weight: 400;
   scale: 2;
   bottom: 190px;
 }
+.homeMandala{
+   height: auto;
+  width: 100%;
+  right: 0;
+  height: auto;
+  scale: 2;
+  bottom: 100px;
+}
 .sec2Cont{
   bottom: 0px;
 }
@@ -386,6 +409,18 @@ font-weight: 400;
   height: auto;
   scale: 2;
   bottom: 90px;
+}
+.homeMandala{
+   height: auto;
+  width: 100%;
+  right: 0;
+  height: auto;
+  scale: 2;
+   bottom: 100px;
+
+}
+h1{
+  font-size: 38px;
 }
 }
 .sec3Cont{

@@ -21,6 +21,7 @@ header{
     justify-content: center;
     padding: 0 100px;
     margin: 10px 0;
+    filter: drop-shadow(2px 2px 16px rgba(11, 12, 33, 0.147));
 }
 .headerBg{
     height: 110.8%;

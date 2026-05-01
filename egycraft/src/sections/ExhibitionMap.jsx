@@ -710,7 +710,7 @@ export default function ExhibitionMap() {
             top: tooltipPos.y,
             background: "rgba(67, 138, 209, 0.97)",
             border: `1px solid ${P.teal}`,
-            borderRadius: 8,
+            borderRadius: "0 0 70 70",
             padding: "7px 13px",
             color: P.cream,
             fontSize: 12,

@@ -1,0 +1,22 @@
+footer{
+    background-color: #FFF4E2;
+    display: flex;
+    min-height: 900px;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    flex-direction: column;
+    z-index: -1;
+}
+footer .animatedCircleCont{
+    scale: -1;
+    height: 721px;
+    position: absolute;
+    bottom: 0;
+}
+footer .animatedCircleCont img{
+        bottom: 300px;
+    left: 0;
+    scale: 1;
+    width: 100%;
+}

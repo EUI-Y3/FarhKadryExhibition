@@ -27,6 +27,7 @@ import { supabase } from '../supabase';
 import ExhibitionDetails from '../sections/eventDetails';
 import CountdownTimer from '../sections/countdown';
 import ExhibitionMap from '../sections/ExhibitionMap';
+import Footer from '../components/layout/footer';
 const Event = () => {
     const [trailKey, setTrailKey] = useState(0);
     return ( <>
@@ -35,7 +36,6 @@ const Event = () => {
     <main>
     <div className="secBg secBg2 scalein2 ">
         <img src={frame1} alt=""  />
-
             </div>
     <div className="secContainer">
         <section className='section1 '>
@@ -111,7 +111,12 @@ const Event = () => {
           </iframe>
         </div>
     </div>
-    <div className="map1">
+    <div className="map1 map2">
+        <HeadingBlock 
+        style1="dark left"
+        heading="Exhbition Map"
+        subheading="View our booths and find directions in 3D mode"
+        />
 <ExhibitionMap />    
     </div>
     </section>
@@ -137,6 +142,7 @@ const Event = () => {
     </section>
    </div>
     </main>
+    <Footer />
     </> );
 }
  

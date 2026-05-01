@@ -19,7 +19,8 @@ const Navigation = () => {
     }, []);
 
     return (
-        <ul>
+        <nav>
+            <ul>
             {navItems.map((item) => (
                 <Navitem
                     key={item.id}
@@ -29,6 +30,7 @@ const Navigation = () => {
                 />
             ))}
         </ul>
+        </nav>
     );
 };
 
