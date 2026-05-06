@@ -6,7 +6,7 @@ import Navigation from './nav';
 import logo1 from './../../assets/logoheader.svg'
 import headerbg from './../../assets/headerleft.png'
 import headerbg2 from './../../assets/headerright.png'
-import Button from '../common/button';
+import Button from '../common/button'
 import burger from './../../assets/burgermenu.svg'
 import close from './../../assets/close.svg'
 import './../layout/popup.css'

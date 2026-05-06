@@ -3,9 +3,13 @@ import { supabase } from '../supabase';
 import './home.css';
 import './booking.css';
 import './../animations.css';
+import star from '../assets/star.svg'
+
 
 import illus1 from '../assets/horseillus1.svg';
 import frame2 from '../assets/formpage.svg';
+import formend from '../assets/formend.png';
+
 
 import Header from '../components/layout/header';
 import HeadingBlock from '../components/common/heading';
@@ -100,10 +104,10 @@ const Booking = () => {
 
       <main>
         <div className="secBg secBg2 scalein2 formPage">
-          <img src={frame2} alt="" aria-hidden="true" />
+          <img className='theBG' src={frame2} alt="" aria-hidden="true" />
         </div>
 
-        <div className="secContainer">
+        <div className="secContainer formSec">
           <section className="section1 formbg">
 
             <div className="heroCont1 eventSec1 formCont">
@@ -201,15 +205,17 @@ const Booking = () => {
                 <div aria-live="polite" className="formStatus">
                   {status.message && <p>{status.message}</p>}
                 </div>
-
-                <button type="submit" disabled={status.loading} className="primaryBtn">
-                  {status.loading ? 'Booking...' : 'Confirm Booking'}
-                </button>
+<button type="submit" disabled={status.loading} className="blue size2">
+        <img src={star} alt="" />
+        <h6> {status.loading ? 'Booking...' : 'Confirm Booking'}</h6>
+        <img src={star} alt="" />
+        </button>
 
               </form>
-
             </div>
           </section>
+<img src={formend} alt="" className='formEnd' />
+
         </div>
       </main>
     </>
