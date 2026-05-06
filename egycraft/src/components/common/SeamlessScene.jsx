@@ -73,10 +73,11 @@ export default function SeamlessScene() {
   }, []);
 
   return (
-    <div className="wrappedWrapper" >
+    <div className="wrappedWrapper" aria-hidden="true" >
       <div className={styles.wrapper}>
 
       <svg
+      aria-hidden="true"
         width="1586"
         height="963"
         viewBox="0 0 1586 963"

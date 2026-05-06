@@ -236,6 +236,9 @@ font-weight: 400;
   scale: 1.1;
   animation: spin 40s linear infinite;
 }
+.spin{
+  animation: spin 30s linear infinite;
+}
 .btnFlex{
   display: flex;
   align-items: center;
@@ -395,6 +398,11 @@ font-weight: 400;
   bottom: 0px;
 }
 }
+@media  (max-width: 800px){
+h1{
+  font-size: 43px;
+}
+}
 @media (max-width: 600px) {
   .secContainer{
   padding: 0 15px;
@@ -420,7 +428,7 @@ font-weight: 400;
 
 }
 h1{
-  font-size: 38px;
+  font-size: 32px;
 }
 }
 .sec3Cont{

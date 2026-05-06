@@ -1,11 +1,8 @@
 import React from 'react';
-import { MapContainer, TileLayer, Marker } from 'react-leaflet';
-import 'leaflet/dist/leaflet.css';
 import { useState, useEffect } from 'react';
-import L from 'leaflet';
-
 import ImageTrail from './../components/common/imageTrail'
 // import {grid} from './../assets/grid.svg'
+import './vendors.css'
 
 import './event.css'
 import SeamlessScene from '../components/common/SeamlessScene';
@@ -13,11 +10,11 @@ import Model1 from '../components/common/model';
 import './home.css'
 import './../animations.css'
 import locIcon from '../assets/locationicon.svg'
-
-import illus1 from '../assets/horseillus1.svg'
+import heroillus from '../assets/decoricon01.svg'
 import logodecor1 from '../assets/tashkil.svg'
 import logodecor2 from '../assets/decor.svg'
 import circle from '../assets/circle1.svg'
+import category1 from '../assets/category1.png'
 import mandala from '../assets/mandala1.svg'
 import frame1 from '../assets/frame2.svg'
 import sec2img from '../assets/sec2img.png'
@@ -33,30 +30,11 @@ import CountdownTimer from '../sections/countdown';
 import ExhibitionMap from '../sections/ExhibitionMap';
 import Footer from '../components/layout/footer';
 import FAQ from '../sections/faq';
-const Event = () => {
+const Vendors = () => {
     const [trailKey, setTrailKey] = useState(0);
-
-    const starIcon = L.divIcon({
-  className: '',
-  html: `
-    <div style="
-      background: #e8472a;
-      width: 36px;
-      height: 36px;
-      border-radius: 8px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 20px;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.3);
-    ">⭐</div>
-  `,
-  iconSize: [36, 36],
-  iconAnchor: [18, 18],
-});
     return ( <>
     <Header />
-    <SeamlessScene/>
+    {/* <SeamlessScene/> */}
     <main>
     <div className="secBg secBg2 scalein2 ">
         <img src={frame1} alt=""  />
@@ -64,12 +42,33 @@ const Event = () => {
     <div className="secContainer">
         <section className='section1 '>
         <div className="heroCont1 eventSec1">
-            <img src={illus1} alt="fatima hand logo" />
             <HeadingBlock
-            heading="Exhibition Details"
+            heading="Our
+Vendors"
             style1="dark center decor"
             />
+            <div className="vendorsTitleflex">
+                <div className="illusCont scaleIn">
+                    <img className='spin' src={heroillus} alt='' aria-hidden="true" />
+                </div>
+                                <div className="illusCont scaleIn">
+                    <img className='spin' src={heroillus} alt='' aria-hidden="true" />
+                </div>
+                                <div className="illusCont scaleIn">
+                    <img className='spin' src={heroillus} alt='' aria-hidden="true" />
+                </div>
+            </div>
+            <p className='vendorsSub'>
+                Meet the makers behind Egypt's finest crafts. Discover their stories, explore their creations, and connect with artisans preserving ancestral traditions.
+            </p>
         </div>
+        <div className="card">
+    <img src={category1} alt="" />
+
+  <div className="card-body">
+    <h3>Bronze</h3>
+  </div>
+</div>
     </section>
     </div>
     <div className="secContainer modelCont cardsSec">
@@ -85,8 +84,8 @@ const Event = () => {
         heading="Our Gallery"
         subheading ="Hover to reveal!"
         />
-<div style={{ height: '500px', position: 'relative', overflow: 'hidden'}}>
-  <ImageTrail
+<div aria-hidden="true" style={{ height: '500px', position: 'relative', overflow: 'hidden'}}>
+  <ImageTrail 
     key={trailKey}
     items={[
       'https://i.pinimg.com/1200x/4a/dd/7e/4add7e6985caeffe31364c772e2ab20f.jpg',
@@ -123,37 +122,16 @@ const Event = () => {
         </div>
         </div>
         <div className='firstMap' >
-            {/* <iframe
-              title="Cairo International Convention Center map"
-              src="https://snazzymaps.com/embed/790597"
-              width="100%"
-              height="600px"
-              style={{ border: 'none' }}
-            ></iframe> */}
           <iframe
             title="Cairo International Convention Center map"
             frameBorder="0"
             scrolling="no"
             marginHeight="0"
             marginWidth="0"
-            src="https://api.maptiler.com/maps/019df96b-e0f5-7537-8811-d6714c320023/?key=HKdyafVjoQHYZLyJTsL0#12.2/30.12750/31.60414"
+            src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBVizdQeh3udy11xDc5Ao2YStR2gLc-rfc&amp;q=El-Nasr%20Road%2C%20Nasr%20City%2C%20Cairo%20Governorate&amp;maptype=roadmap&amp;zoom=14"
           >
             <a href="https://www.mapsdirections.info/pl/mapa-populacji/">Check Location</a>
           </iframe>
-          
-{/* 
-<MapContainer   
-  center={[30.0727, 31.4177]} // Cairo International Convention Center coords
-  zoom={12}
-  style={{ height: '600px', width: '100%' }}
-  zoomControl={false}
->
-  <TileLayer
-    url="https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png"
-    attribution="©OpenStreetMap ©CartoDB"
-  />
-  <Marker position={[30.0727, 31.4177]} icon={starIcon} />
-</MapContainer> */}
         </div>
     </div>
     <div className="map1 map2">
@@ -169,7 +147,7 @@ const Event = () => {
    <div className="secContainer sec3Cont galleryCont experienceSecCont">
      <section className='section2 eventGallery experienceSec'>
         <div className="mandalaCont mandalaCont2">
-        <img className='mandala' src={mandala} alt="" />
+        <img aria-hidden="true" className='mandala' src={mandala} alt="" />
         </div>
         <div className="experienceCont">
             <HeadingBlock 
@@ -182,7 +160,7 @@ const Event = () => {
         <Button style1="blue size2"  cta="Book my ticket" />
         </div>
         <div className="mandalaCont mandalaCont2">
-        <img className='mandala mandala2' src={mandala} alt="" />
+        <img aria-hidden="true" className='mandala mandala2' src={mandala} alt="" />
         </div>
     </section>
    </div>
@@ -200,4 +178,4 @@ const Event = () => {
     </> );
 }
  
-export default Event;
+export default Vendors;

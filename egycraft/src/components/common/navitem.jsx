@@ -7,9 +7,9 @@ const Navitem = (props) => {
     return ( <>
     <li className={`${props.style1} ${isActive ? "active" : ""}`}>
             <Link to={props.link} id="link">
-                <img src={star} alt="" />
+                <img aria-hidden="true" src={star} alt="" />
                 {props.title}
-                <img src={star} alt="" />
+                <img aria-hidden="true" src={star} alt="" />
             
             </Link>
     </li>

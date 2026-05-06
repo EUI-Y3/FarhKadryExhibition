@@ -19,7 +19,7 @@ const Navigation = () => {
     }, []);
 
     return (
-        <nav>
+        <nav role="navigation" aria-label="Main navigation" >
             <ul>
             {navItems.map((item) => (
                 <Navitem

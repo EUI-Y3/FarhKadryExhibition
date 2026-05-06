@@ -43,8 +43,8 @@ const HomeS2 = () => {
                     heading={section.title}
                     img={logodecor2}  
                 />
-            <img className='homeS2Decor1 float' src={decor2} alt="" />
-            <img className='homeS2Decor2 float' src={decor3} alt="" />
+            <img  aria-hidden="true" className='homeS2Decor1 float' src={decor2} alt="" />
+            <img  aria-hidden="true" className='homeS2Decor2 float' src={decor3} alt="" />
 
                 <p>{section.description}</p>
 
@@ -56,10 +56,9 @@ const HomeS2 = () => {
             </div>
 
             <div className="sec2imgCont">
-                <img 
-                    className='moveIn scrollAnimate2' 
+                <img className='moveIn scrollAnimate2' 
                     src={sec2img} 
-                    alt="" 
+                    alt="Decorative Weavery beautfully displayed in pink, blue and teal colors" 
                 />
             </div>
         </section>

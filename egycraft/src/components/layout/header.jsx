@@ -7,8 +7,8 @@ import logo1 from './../../assets/logoheader.svg'
 import headerbg from './../../assets/headerleft.png'
 import headerbg2 from './../../assets/headerright.png'
 import Button from '../common/button';
-import burger from './../../assets/hiwIcon01.svg'
-import close from './../../assets/hiwIcon01.svg'
+import burger from './../../assets/burgermenu.svg'
+import close from './../../assets/close.svg'
 import './../layout/popup.css'
 
 const Header = () => {
@@ -26,8 +26,8 @@ const Header = () => {
             <Navigation />
         </div>
         <Button style1="size1 blue" cta="Book my ticket" link="/booking" />
-        <button className="btn3 burgermenu" onClick={openPopup}>
-                            <img src={burger} alt="menu" />
+        <button aria-label="Menu" aria-expanded="false" aria-controls="menu-list" className="btn3 burgermenu" onClick={openPopup}>
+                            <img  src={burger} alt="menu" />
                         </button>
     </header>
     </div>
@@ -40,7 +40,7 @@ const Header = () => {
 
                     {/* CLOSE BUTTON */}
                     <button className="btn3 closed" onClick={closePopup}>
-                        <img src={close} alt="close" />
+                        <img src={close} alt="close"  />
                     </button>
                 </div>
             </div>

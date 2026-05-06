@@ -3,13 +3,13 @@ import img from './../../assets/decor.svg'
 import './heading.css'
 const HeadingBlock = (props) => {
     return (<>
-    <div className={`headingBlock ${props.style1}`}>
+    <div className={`headingBlock scaleIn scrollAnimate ${props.style1}`}>
         <h1>
 {props.heading}
     </h1>
-        <img src={img} alt="" />
+        <img className='scaleIn scrollAnimate2' src={img} alt="" />
 
-    <h3>
+    <h3 className='scaleIn scrollAnimate2'>
 {props.subheading}
     </h3>
     </div>

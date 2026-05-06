@@ -2,7 +2,7 @@
     background-image: url(../assets/fomBg.svg);
     background-size: cover;
     background-repeat: no-repeat;
-    margin-top: 350px;
+    margin-top: 180px;
     background-position-x: center;
     background-position-y: top;
     padding-top: 80px;
@@ -37,7 +37,7 @@
     flex-direction: row;
     gap: 20px;
     justify-self: center;
-    max-width: 892px;
+    max-width: 700px;
     width: 100%;
     padding: 0 20px;
 }
@@ -84,6 +84,7 @@ form{
     align-items: center;
 }
 .formCont{
+    margin-top: 40px;
     width: 100%;
     padding: 0 clamp(20px, 5vw, 180px);
 }
@@ -95,13 +96,25 @@ form{
     height: 100%;
     position: absolute;
 }
+.inputCont.inputError input {
+  border-color: #e53e3e;
+  outline-color: #e53e3e;
+}
+
+.fieldError {
+      display: block;
+    margin-top: 4px;
+    color: #e53e3e;
+    font-size: 14px;
+    left: 10px;
+}
 @media (max-width: 850px) {
     .doubleInputs{
         flex-wrap: wrap;
         max-width: 400px;
     }
     .inputCont{
-        min-height: 40px;
+        min-height: 48px
     }
     label {
     margin-left: 10px;
