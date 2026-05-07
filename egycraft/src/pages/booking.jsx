@@ -118,7 +118,7 @@ const Booking = () => {
                 alt="Decorative Egyptian folklore horse illustration"
               />
 
-              <HeadingBlock heading="Book Your Ticket" style1="dark center decor" />
+              <HeadingBlock heading="Book Your Ticket" style1="dark center decor wrapped" />
 
               <form onSubmit={handleSubmit} aria-labelledby="booking-title" noValidate>
 

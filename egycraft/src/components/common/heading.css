@@ -47,3 +47,10 @@
     color: var(--mainBg, #FFF4E2);
 
 }
+.wrapped h1{
+    max-width: 443px;
+    text-wrap: wrap;
+}
+.wrapped2{
+    max-width: 255px;
+}

@@ -30,31 +30,32 @@ import CountdownTimer from '../sections/countdown';
 import ExhibitionMap from '../sections/ExhibitionMap';
 import Footer from '../components/layout/footer';
 import FAQ from '../sections/faq';
+import Categories from '../sections/categories';
 const Vendors = () => {
     const [trailKey, setTrailKey] = useState(0);
     return ( <>
     <Header />
-    {/* <SeamlessScene/> */}
+    <SeamlessScene/>
     <main>
     <div className="secBg secBg2 scalein2 ">
         <img src={frame1} alt=""  />
             </div>
     <div className="secContainer">
         <section className='section1 '>
-        <div className="heroCont1 eventSec1">
+        <div className="heroCont1 eventSec1 fadeIn">
             <HeadingBlock
             heading="Our
 Vendors"
-            style1="dark center decor"
+            style1="dark center decor wrapped wrapped2"
             />
             <div className="vendorsTitleflex">
-                <div className="illusCont scaleIn">
+                <div className="illusCont scaleIn2">
                     <img className='spin' src={heroillus} alt='' aria-hidden="true" />
                 </div>
-                                <div className="illusCont scaleIn">
+                                <div className="illusCont scaleIn3">
                     <img className='spin' src={heroillus} alt='' aria-hidden="true" />
                 </div>
-                                <div className="illusCont scaleIn">
+                                <div className="illusCont scaleIn4">
                     <img className='spin' src={heroillus} alt='' aria-hidden="true" />
                 </div>
             </div>
@@ -62,46 +63,17 @@ Vendors"
                 Meet the makers behind Egypt's finest crafts. Discover their stories, explore their creations, and connect with artisans preserving ancestral traditions.
             </p>
         </div>
-        <div className="card">
-    <img src={category1} alt="" />
-
-  <div className="card-body">
-    <h3>Bronze</h3>
-  </div>
-</div>
     </section>
     </div>
-    <div className="secContainer modelCont cardsSec">
-        <ExhibitionDetails />
-        
-        <CountdownTimer />
-    </div>
-    
-       <div className="secContainer sec3Cont galleryCont">
-     <section className='section2 eventGallery'>
-        <HeadingBlock 
-        style1="light center decor"
-        heading="Our Gallery"
-        subheading ="Hover to reveal!"
+    <div className="secContainer modelCont catSec">
+        <section className=''>
+            <HeadingBlock 
+        style1="dark center decor"
+        heading="What our vendors sell"
         />
-<div aria-hidden="true" style={{ height: '500px', position: 'relative', overflow: 'hidden'}}>
-  <ImageTrail 
-    key={trailKey}
-    items={[
-      'https://i.pinimg.com/1200x/4a/dd/7e/4add7e6985caeffe31364c772e2ab20f.jpg',
-      'https://i.pinimg.com/736x/bf/83/bf/bf83bfc5dc7ccea47985f8aadbdcb082.jpg',
-      'https://i.pinimg.com/1200x/c1/bc/b3/c1bcb349a3cb1af0d78a51a1d5321320.jpg',
-      'https://i.pinimg.com/736x/48/4a/21/484a218cf250f75d5d7e91fe5eea7bc7.jpg',
-      'https://i.pinimg.com/736x/45/90/5f/45905f42e9a38465a034a69229b7fbc2.jpg',
-      'https://i.pinimg.com/1200x/2a/91/df/2a91df81616be3bacd1882fbe5e27ba4.jpg',
-      'https://i.pinimg.com/736x/2d/b2/ac/2db2ac1b6e9fd041c3bd9fb4b0d6673d.jpg',
-      'https://i.pinimg.com/736x/ca/cd/a6/cacda646df2c0ef73013bbd6f19a3109.jpg',
-    ]}
-    variant="3"
-  />
-</div>
-    </section>
-   </div>
+    <Categories />
+        </section>
+    </div>
    <div className="secContainer sec2Cont  modelCont mapCont">
     <section className='section2 mapSec'>
     <div className="map1">
@@ -162,15 +134,6 @@ Vendors"
         <div className="mandalaCont mandalaCont2">
         <img aria-hidden="true" className='mandala mandala2' src={mandala} alt="" />
         </div>
-    </section>
-   </div>
-   <div className="secContainer sec2Cont">
-    <section className="section2 faqSec">
-        <HeadingBlock
-        style1="dark left"
-        heading="Frequently asked questIons"
-        />
-        <FAQ />
     </section>
    </div>
     </main>

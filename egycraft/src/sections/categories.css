@@ -1,0 +1,35 @@
+ .carousel-wrapper  {
+    /* overflow: hidden; */
+    position: relative;
+    width: 100vw;
+    height: 600px;
+    margin-top: 20px;
+    /* bottom: 30px; */
+}
+.carousel{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+     animation: scrollRight 20s linear infinite;
+}
+.carousel-wrapper2{
+    overflow: scroll;
+}
+.carousel2{
+    animation: none;
+}
+ .blurred_separator, .blurred_separator2{
+    position: absolute;
+    background: var(--mainBg);
+    height: 200%;
+    filter: blur(10px);
+    width: 10%;
+    top: -30%;
+    z-index: 9;
+}
+.blurred_separator{
+    left: -2%;
+}
+.blurred_separator2{
+    right: -2%;
+}

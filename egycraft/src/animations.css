@@ -64,6 +64,18 @@
   transform-origin: center;
 	animation: scale-in-center2 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) 2s both;
 }
+.scaleIn2{
+  transform-origin: center;
+	animation: scale-in-center2 800ms cubic-bezier(0.250, 0.460, 0.450, 0.940) 600ms both;
+}
+.scaleIn3{
+  transform-origin: center;
+	animation: scale-in-center2 800ms cubic-bezier(0.250, 0.460, 0.450, 0.940) 800ms both;
+}
+.scaleIn4{
+  transform-origin: center;
+	animation: scale-in-center2 800ms cubic-bezier(0.250, 0.460, 0.450, 0.940) 1s both;
+}
 @keyframes scale-in-center2 {
   0% {
     -webkit-transform: scale(0);
