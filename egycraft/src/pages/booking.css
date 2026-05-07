@@ -5,22 +5,9 @@
     margin-top: 95px;
     background-position-x: center;
     background-position-y: top;
-    padding-top: 80px;
+    padding-top: 138px;
     max-height: unset;
     min-height: 900px;
-}
-.formbg2{
-    background-image: url(../assets/fomBg.svg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position-x: center;
-    background-position-y: bottom;
-    max-height: unset;
-    min-height: 480px;
-    width: 100%;
-    /* position: absolute;
-    bottom: 0;
-    z-index: -1; */
 }
 .inputCont{
     background-image: url(./../assets/inputBg.png);

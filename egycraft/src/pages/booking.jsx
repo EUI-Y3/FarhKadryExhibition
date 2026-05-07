@@ -13,6 +13,7 @@ import formend from '../assets/formend.png';
 
 import Header from '../components/layout/header';
 import HeadingBlock from '../components/common/heading';
+import Footer from '../components/layout/footer';
 
 const Booking = () => {
 
@@ -113,7 +114,7 @@ const Booking = () => {
             <div className="heroCont1 eventSec1 formCont">
 
               <img
-                className="heroimg"
+                className="heroimg scaleIn2"
                 src={illus1}
                 alt="Decorative Egyptian folklore horse illustration"
               />
@@ -218,6 +219,7 @@ const Booking = () => {
 
         </div>
       </main>
+      <Footer />
     </>
   );
 };

@@ -36,24 +36,24 @@ import FAQ from '../sections/faq';
 const Event = () => {
     const [trailKey, setTrailKey] = useState(0);
 
-    const starIcon = L.divIcon({
-  className: '',
-  html: `
-    <div style="
-      background: #e8472a;
-      width: 36px;
-      height: 36px;
-      border-radius: 8px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 20px;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.3);
-    ">⭐</div>
-  `,
-  iconSize: [36, 36],
-  iconAnchor: [18, 18],
-});
+//     const starIcon = L.divIcon({
+//   className: '',
+//   html: `
+//     <div style="
+//       background: #e8472a;
+//       width: 36px;
+//       height: 36px;
+//       border-radius: 8px;
+//       display: flex;
+//       align-items: center;
+//       justify-content: center;
+//       font-size: 20px;
+//       box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+//     ">⭐</div>
+//   `,
+//   iconSize: [36, 36],
+//   iconAnchor: [18, 18],
+// });
     return ( <>
     <Header />
     <SeamlessScene/>
@@ -62,9 +62,11 @@ const Event = () => {
         <img src={frame1} alt=""  />
             </div>
     <div className="secContainer">
-        <section className='section1 '>
-        <div className="heroCont1 eventSec1">
-            <img src={illus1} alt="fatima hand logo" />
+        <section className='section1 fadeIn '>
+        <div className="heroCont1 eventSec1 ">
+            <img
+            className='heroimg scaleIn2'
+            src={illus1} alt="decorative illustartion of an egyptian floklore  horse" />
             <HeadingBlock
             heading="Exhibition Details"
             style1="dark center decor"

@@ -27,3 +27,29 @@
 .catSec{
   padding-top: 100px;
 }
+.hand2{
+    background-image: url(../assets/hand2.png);
+    width: 183px;
+height: 226px;
+background-size: 100% 100%;
+background-position: center;
+display: flex;
+justify-content: center;
+padding-top: 100px;
+}
+.hand2 svg{
+    transform: translateY(54px);
+    left: 18px;
+    scale: 1.2;
+}
+.carftmakerCont{
+        justify-self: center;
+    align-self: center;
+    padding-bottom: 150px;
+    gap: 20px;
+    max-width: 900px;
+}
+.carftmakerSec{
+    display:flex ;
+    justify-content: center;
+}

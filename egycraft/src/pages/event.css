@@ -1,8 +1,8 @@
-.center img{
+/* .center img{
     width:116px ;
     height: 31.0308px;
     justify-self: center;
-}
+} */
 .detailsFlex{
     display: flex;
     align-items: center;

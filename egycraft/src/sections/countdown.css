@@ -30,3 +30,55 @@
     text-transform: uppercase;
     line-height: normal;
 }
+@media (max-width: 800px) {
+    .timeFlex h1 {
+    font-size: 75px;
+}
+.countdownCont {
+    display: flex;
+    width: 100%;
+    padding: 100px 40px;
+    justify-content: space-between;
+    max-width: unset;
+    flex-wrap: wrap;
+    gap: 18px;
+}
+.timeFlex h5 {
+    color: #1C1C35;
+    font-size: 22px;
+}
+.timeFlex {
+    width: 90px;
+}
+    .countdownCont {
+        width: 100%;
+        padding: 100px 22px;
+        gap: 18px;
+    }
+}
+@media (max-width: 600px) {
+    .timeFlex h1 {
+    font-size: 55px;
+}
+.countdownCont {
+    display: flex;
+    width: 100%;
+    padding: 100px 40px;
+    justify-content: space-between;
+    max-width: unset;
+    flex-wrap: wrap;
+    gap: 18px;
+}
+.timeFlex h5 {
+    color: #1C1C35;
+    font-size: 18px;
+}
+.timeFlex {
+    width: auto;
+}
+    .countdownCont {
+        width: 100%;
+        padding: 100px 22px;
+        gap: 18px;
+    }
+}

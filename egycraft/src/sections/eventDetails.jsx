@@ -7,10 +7,10 @@ import './../pages/event.css'
 import Detail from '../components/common/detailCard';
 const ExhibitionDetails = () => {
     return ( <>
-    <div className="detailsFlex">
+    <div className="detailsFlex moveIn scrollAnimate">
         <Detail
         icon={detailicon2}
-        style1="cardBlue"
+        style1="cardBlue moveIn"
         title= "Time"
         desc="March 15-20, 2026"
         desc2="6 days of craft"

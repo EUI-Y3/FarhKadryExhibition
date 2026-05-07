@@ -6,33 +6,19 @@ import './vendors.css'
 
 import './event.css'
 import SeamlessScene from '../components/common/SeamlessScene';
-import Model1 from '../components/common/model';
 import './home.css'
 import './../animations.css'
-import locIcon from '../assets/locationicon.svg'
 import heroillus from '../assets/decoricon01.svg'
-import logodecor1 from '../assets/tashkil.svg'
-import logodecor2 from '../assets/decor.svg'
-import circle from '../assets/circle1.svg'
-import category1 from '../assets/category1.png'
-import mandala from '../assets/mandala1.svg'
+
 import frame1 from '../assets/frame2.svg'
-import sec2img from '../assets/sec2img.png'
-import herologo from '../assets/herologo.svg'
 import Header from '../components/layout/header';
 import Button from '../components/common/button';
 import HeadingBlock from '../components/common/heading';
-import HowItWorks from '../components/common/hiw';
-import HomeS2 from '../sections/homesec1';
-import { supabase } from '../supabase';
-import ExhibitionDetails from '../sections/eventDetails';
-import CountdownTimer from '../sections/countdown';
-import ExhibitionMap from '../sections/ExhibitionMap';
 import Footer from '../components/layout/footer';
-import FAQ from '../sections/faq';
 import Categories from '../sections/categories';
+import VendorsSec from '../sections/vendorsSec';
+import BlinkingEye from '../components/common/blinkingEye';
 const Vendors = () => {
-    const [trailKey, setTrailKey] = useState(0);
     return ( <>
     <Header />
     <SeamlessScene/>
@@ -76,64 +62,33 @@ Vendors"
     </div>
    <div className="secContainer sec2Cont  modelCont mapCont">
     <section className='section2 mapSec'>
-    <div className="map1">
-        <div className="mapLeft">
-            <HeadingBlock 
-        style1="dark left"
-        heading="Getting There"
-        />
-        <div className="mapAddress"> 
-            <img src={locIcon} alt="location icon" />
-            <div>
-                <h3>Address</h3>
-                    <p>
-                        Cairo International Convention Center
-                        El-Nasr Road, Nasr City, Cairo Governorate
-                    </p>
-            </div>
-        </div>
-        </div>
-        <div className='firstMap' >
-          <iframe
-            title="Cairo International Convention Center map"
-            frameBorder="0"
-            scrolling="no"
-            marginHeight="0"
-            marginWidth="0"
-            src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBVizdQeh3udy11xDc5Ao2YStR2gLc-rfc&amp;q=El-Nasr%20Road%2C%20Nasr%20City%2C%20Cairo%20Governorate&amp;maptype=roadmap&amp;zoom=14"
-          >
-            <a href="https://www.mapsdirections.info/pl/mapa-populacji/">Check Location</a>
-          </iframe>
-        </div>
-    </div>
     <div className="map1 map2">
         <HeadingBlock 
-        style1="dark left"
-        heading="Exhbition Map"
+        style1="dark center decor"
+        heading="All Artisians"
         subheading="View our booths and find directions in 3D mode"
         />
-<ExhibitionMap />    
+        <VendorsSec />
     </div>
     </section>
    </div>
    <div className="secContainer sec3Cont galleryCont experienceSecCont">
-     <section className='section2 eventGallery experienceSec'>
-        <div className="mandalaCont mandalaCont2">
-        <img aria-hidden="true" className='mandala' src={mandala} alt="" />
-        </div>
-        <div className="experienceCont">
+     <section className='section2 eventGallery experienceSec carftmakerSec'>
+        <div className="experienceCont carftmakerCont">
+            <div className="hand2 scaleIn scrollAnimate">
+                <BlinkingEye />
+                
+            </div>
             <HeadingBlock 
-        style1="light center decor"
-        heading="Don’t Miss The Experience."
+        style1="light center"
+        heading="Are you a craftmaker?"
         />
-        <h4 className='light'>
-            Secure your spot at Egypt's most anticipated craft celebration. Limited early bird tickets available.
+        <h4 className='light fadeIn scrollAnimate2'>
+            Join EgyCraft and showcase your work to thousands of craft enthusiasts across Egypt. Share your story, connect with buyers, and preserve our cultural heritage.
         </h4>
-        <Button style1="blue size2"  cta="Book my ticket" />
+        <Button style1="blue size2 fadeIn scrollAnimate"  cta="Become a Vendor" />
         </div>
-        <div className="mandalaCont mandalaCont2">
-        <img aria-hidden="true" className='mandala mandala2' src={mandala} alt="" />
-        </div>
+
     </section>
    </div>
     </main>

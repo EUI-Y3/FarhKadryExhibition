@@ -8,9 +8,9 @@ const Button = (props) => {
     
         <button className={props.style1}>
         <Link id='link1' to={props.link} />
-        <img src={star} alt="" />
+        <img className='starhover' src={star} alt="" />
         <h6>{props.cta}</h6>
-        <img src={star} alt="" />
+        <img className='starhover' src={star} alt="" />
         </button>
     </> );
 }
