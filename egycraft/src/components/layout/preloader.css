@@ -4,7 +4,7 @@
   align-items: center;
   justify-content: center;
   height: calc(100vh + 100px);
-  background:#02000ee0; ;
+  background:#e2e1edef; ;
   position: fixed;
   z-index: 99999999;
   width: 100vw;
@@ -31,9 +31,9 @@
   align-items: center;
   justify-content: center;
 }
-.image-container img {
+.image-container svg {
   max-width: 300px;
   height: auto;
   border-radius: 8px;
-  animation: spin 3s linear infinite;
+  animation: float 3s linear infinite;
 }

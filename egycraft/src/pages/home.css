@@ -111,7 +111,7 @@ line-height: 20px;
     overflow: hidden;
   margin-top: 100px;
   /* transform: scaleX(1.1); */
-  animation: scale-in-2 800ms ease-in-out both ;
+  animation: scale-in-2 800ms ease-in-out 1.5s both ;
 }
 .secBg img{
   width: 100%;

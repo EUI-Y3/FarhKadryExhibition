@@ -2,21 +2,21 @@ import { useEffect, useRef } from 'react';
 import styles from './SeamlessScene.module.css';
 
 const UNITS = [
-    { id: 'u1', entryDelay: 0.0, floatDur: 3.2, floatAmp: 6, floatDelay: 0.7 },
-    { id: 'u2', entryDelay: 0.1, floatDur: 3.52, floatAmp: 8, floatDelay: 0.82 },
-    { id: 'u3', entryDelay: 0.2, floatDur: 3.84, floatAmp: 10, floatDelay: 0.94 },
-    { id: 'u4', entryDelay: 0.3, floatDur: 4.16, floatAmp: 12, floatDelay: 0.82 },
-    { id: 'u5', entryDelay: 0.4, floatDur: 4.48, floatAmp: 14, floatDelay: 0.94 },
-    { id: 'u6', entryDelay: 0.5, floatDur: 4.8, floatAmp: 6, floatDelay: 1.06 },
-    { id: 'u7', entryDelay: 0.6, floatDur: 5.12, floatAmp: 8, floatDelay: 0.7 },
-    { id: 'u8', entryDelay: 0.7, floatDur: 5.44, floatAmp: 10, floatDelay: 0.82 },
-    { id: 'u9', entryDelay: 0.8, floatDur: 5.76, floatAmp: 12, floatDelay: 0.94 },
-    { id: 'u10', entryDelay: 0.9, floatDur: 3.52, floatAmp: 14, floatDelay: 1.06 },
-    { id: 'u11', entryDelay: 1.0, floatDur: 3.84, floatAmp: 6, floatDelay: 1.18 },
-    { id: 'u12', entryDelay: 1.1, floatDur: 4.16, floatAmp: 8, floatDelay: 0.7 },
-    { id: 'u13', entryDelay: 1.2, floatDur: 4.48, floatAmp: 10, floatDelay: 0.82 },
-    { id: 'u14', entryDelay: 1.3, floatDur: 4.8, floatAmp: 12, floatDelay: 0.94 },
-    { id: 'u15', entryDelay: 1.4, floatDur: 3.2, floatAmp: 14, floatDelay: 1.06 }
+  { id: 'u1', entryDelay: 1.5, floatDur: 3.2, floatAmp: 6, floatDelay: 2.2 },
+  { id: 'u2', entryDelay: 1.6, floatDur: 3.52, floatAmp: 8, floatDelay: 2.32 },
+  { id: 'u3', entryDelay: 1.7, floatDur: 3.84, floatAmp: 10, floatDelay: 2.44 },
+  { id: 'u4', entryDelay: 1.8, floatDur: 4.16, floatAmp: 12, floatDelay: 2.32 },
+  { id: 'u5', entryDelay: 1.9, floatDur: 4.48, floatAmp: 14, floatDelay: 2.44 },
+  { id: 'u6', entryDelay: 2.0, floatDur: 4.8, floatAmp: 6, floatDelay: 2.56 },
+  { id: 'u7', entryDelay: 2.1, floatDur: 5.12, floatAmp: 8, floatDelay: 2.2 },
+  { id: 'u8', entryDelay: 2.2, floatDur: 5.44, floatAmp: 10, floatDelay: 2.32 },
+  { id: 'u9', entryDelay: 2.3, floatDur: 5.76, floatAmp: 12, floatDelay: 2.44 },
+  { id: 'u10', entryDelay: 2.4, floatDur: 3.52, floatAmp: 14, floatDelay: 2.56 },
+  { id: 'u11', entryDelay: 2.5, floatDur: 3.84, floatAmp: 6, floatDelay: 2.68 },
+  { id: 'u12', entryDelay: 2.6, floatDur: 4.16, floatAmp: 8, floatDelay: 2.2 },
+  { id: 'u13', entryDelay: 2.7, floatDur: 4.48, floatAmp: 10, floatDelay: 2.32 },
+  { id: 'u14', entryDelay: 2.8, floatDur: 4.8, floatAmp: 12, floatDelay: 2.44 },
+  { id: 'u15', entryDelay: 2.9, floatDur: 3.2, floatAmp: 14, floatDelay: 2.56 }
 ];
 
 export default function SeamlessScene() {

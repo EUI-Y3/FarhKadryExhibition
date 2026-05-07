@@ -14,6 +14,7 @@ import formend from '../assets/formend.png';
 import Header from '../components/layout/header';
 import HeadingBlock from '../components/common/heading';
 import Footer from '../components/layout/footer';
+import Preloader from '../components/layout/preloader';
 
 const Booking = () => {
 
@@ -101,6 +102,7 @@ const Booking = () => {
 
   return (
     <>
+    <Preloader />
       <Header />
 
       <main>

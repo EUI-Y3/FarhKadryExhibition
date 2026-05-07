@@ -18,8 +18,10 @@ import Footer from '../components/layout/footer';
 import Categories from '../sections/categories';
 import VendorsSec from '../sections/vendorsSec';
 import BlinkingEye from '../components/common/blinkingEye';
+import Preloader from '../components/layout/preloader';
 const Vendors = () => {
     return ( <>
+    <Preloader />
     <Header />
     <SeamlessScene/>
     <main>

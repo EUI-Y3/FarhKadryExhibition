@@ -33,6 +33,7 @@ import CountdownTimer from '../sections/countdown';
 import ExhibitionMap from '../sections/ExhibitionMap';
 import Footer from '../components/layout/footer';
 import FAQ from '../sections/faq';
+import Preloader from '../components/layout/preloader';
 const Event = () => {
     const [trailKey, setTrailKey] = useState(0);
 
@@ -55,6 +56,7 @@ const Event = () => {
 //   iconAnchor: [18, 18],
 // });
     return ( <>
+    <Preloader />
     <Header />
     <SeamlessScene/>
     <main>

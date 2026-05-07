@@ -26,6 +26,7 @@ import HomeS2 from '../sections/homesec1';
 import { supabase } from '../supabase';
 import FatimaHand from '../components/common/fatimahand';
 import Footer from '../components/layout/footer';
+import Preloader from '../components/layout/preloader';
 const Home = () => {
 
     // useEffect(()=>{
@@ -37,6 +38,7 @@ const Home = () => {
     // },[])
 
     return ( <>
+    <Preloader />
     <Header />
     <SeamlessScene/>
     <main>
@@ -50,17 +52,17 @@ const Home = () => {
         <section className='section1 '>
             
         <div className="heroCont1">
-            <div className="logoicon">
+            <div className="logoicon scaleIn2">
                 <FatimaHand />
             {/* <img src={logoicon} alt="fatima hand logo" /> */}
             </div>
             <div className="logoCont">
                 <MouseTrailSVG />
             {/* <img className='logodecor1' src={logodecor1} alt="" /> */}
-            <img src={herologo} alt="Egycraft ايجي كرافت" />
-            <img className='logodecor2' src={logodecor2} alt="" />
+            <img className='scaleIn3' src={herologo} alt="Egycraft ايجي كرافت" />
+            <img className='logodecor2 scaleIn4' src={logodecor2} alt="" />
         </div>
-        <h3>Discover The Craft of Egypt</h3>
+        <h3 className='fadeIn2'>Discover The Craft of Egypt</h3>
         <div className="btnFlex">
             <Button style1="size2 blue" cta="Book my ticket" link="/booking" />
             <Button style1="size2 beige" cta="Book my ticket" link="/booking" />
@@ -81,7 +83,7 @@ const Home = () => {
     <div className="secContainer sec2Cont scrollAnimate2">
        <HomeS2 />
     </div>
-       <div className="secContainer sec3Cont ">
+       <div className="secContainer sec3Cont fadeIn5">
      <section className='section2 section3'>
 <div className="mandalaCont">
         <img className='mandala homeMandala' src={mandala} alt="" />
