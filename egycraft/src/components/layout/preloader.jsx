@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import './preloader.css';
-// import preload from './../../assets/fillerIllus01.svg'
 import FatimaHand from '../common/fatimahand';
 import '../../../src/animations.css'
 const Preloader = () => {

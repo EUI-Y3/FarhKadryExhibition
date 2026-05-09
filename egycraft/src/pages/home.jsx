@@ -8,15 +8,11 @@ import './../animations.css'
 import hiwicon1 from './../assets/hiwIcon03.svg'
 import hiwicon2 from './../assets/hiwIcon02.svg'
 import hiwicon3 from './../assets/hiwIcon01.svg'
-
-import logoicon from '../assets/logo2.svg'
-import logodecor1 from '../assets/tashkil.svg'
 import logodecor2 from '../assets/decor.svg'
 import circle from '../assets/circle1.svg'
 import MouseTrailSVG from '../components/common/MouseTrailSVG'
 import mandala from '../assets/mandala1.svg'
 import frame1 from '../assets/frame2.svg'
-import sec2img from '../assets/sec2img.png'
 import herologo from '../assets/herologo.svg'
 import Header from '../components/layout/header';
 import Button from '../components/common/button';
@@ -27,45 +23,34 @@ import { supabase } from '../supabase';
 import FatimaHand from '../components/common/fatimahand';
 import Footer from '../components/layout/footer';
 import Preloader from '../components/layout/preloader';
+import PopUp from '../components/layout/popup';
 const Home = () => {
-
-    // useEffect(()=>{
-    //     const getSections = async ()=> {
-    //     const res = await supabase.from ("section").select("*");
-    //     console.log(res)
-    //     }
-    //     getSections()
-    // },[])
-
     return ( <>
     <Preloader />
     <Header />
+    <PopUp />
     <SeamlessScene/>
     <main>
     <div className="secBg scalein2 ">
         <img src={frame1} alt=""  />
-                {/* <div className="rectangle1"></div> */}
 
             </div>
     <div className="secContainer">
-        {/* <div className="mask1"></div> */}
         <section className='section1 '>
             
         <div className="heroCont1">
             <div className="logoicon scaleIn2">
                 <FatimaHand />
-            {/* <img src={logoicon} alt="fatima hand logo" /> */}
             </div>
             <div className="logoCont">
                 <MouseTrailSVG />
-            {/* <img className='logodecor1' src={logodecor1} alt="" /> */}
             <img className='scaleIn3' src={herologo} alt="Egycraft ايجي كرافت" />
             <img className='logodecor2 scaleIn4' src={logodecor2} alt="" />
         </div>
         <h3 className='fadeIn2'>Discover The Craft of Egypt</h3>
         <div className="btnFlex">
             <Button style1="size2 blue" cta="Book my ticket" link="/booking" />
-            <Button style1="size2 beige" cta="Book my ticket" link="/booking" />
+            <Button style1="size2 beige" cta="View Details" link="/exhibitiondetails" />
 
         </div>
         </div>
@@ -115,7 +100,6 @@ const Home = () => {
         </div>
     </section>
    </div>
-   
     </main>
     <Footer />
 

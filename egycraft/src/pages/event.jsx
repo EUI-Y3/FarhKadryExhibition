@@ -15,18 +15,13 @@ import './../animations.css'
 import locIcon from '../assets/locationicon.svg'
 
 import illus1 from '../assets/horseillus1.svg'
-import logodecor1 from '../assets/tashkil.svg'
-import logodecor2 from '../assets/decor.svg'
-import circle from '../assets/circle1.svg'
+
 import mandala from '../assets/mandala1.svg'
 import frame1 from '../assets/frame2.svg'
-import sec2img from '../assets/sec2img.png'
-import herologo from '../assets/herologo.svg'
 import Header from '../components/layout/header';
 import Button from '../components/common/button';
 import HeadingBlock from '../components/common/heading';
-import HowItWorks from '../components/common/hiw';
-import HomeS2 from '../sections/homesec1';
+
 import { supabase } from '../supabase';
 import ExhibitionDetails from '../sections/eventDetails';
 import CountdownTimer from '../sections/countdown';
@@ -37,24 +32,7 @@ import Preloader from '../components/layout/preloader';
 const Event = () => {
     const [trailKey, setTrailKey] = useState(0);
 
-//     const starIcon = L.divIcon({
-//   className: '',
-//   html: `
-//     <div style="
-//       background: #e8472a;
-//       width: 36px;
-//       height: 36px;
-//       border-radius: 8px;
-//       display: flex;
-//       align-items: center;
-//       justify-content: center;
-//       font-size: 20px;
-//       box-shadow: 0 2px 6px rgba(0,0,0,0.3);
-//     ">⭐</div>
-//   `,
-//   iconSize: [36, 36],
-//   iconAnchor: [18, 18],
-// });
+
     return ( <>
     <Preloader />
     <Header />

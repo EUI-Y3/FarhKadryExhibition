@@ -4,7 +4,7 @@
   align-items: center;
   justify-content: center;
   height: calc(100vh + 100px);
-  background:#e2e1edef; ;
+  background:#e2e1edef; 
   position: fixed;
   z-index: 99999999;
   width: 100vw;
