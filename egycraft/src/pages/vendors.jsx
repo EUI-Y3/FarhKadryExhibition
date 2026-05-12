@@ -1,7 +1,5 @@
 import React from 'react';
 import { useState, useEffect } from 'react';
-import ImageTrail from './../components/common/imageTrail'
-// import {grid} from './../assets/grid.svg'
 import './vendors.css'
 
 import './event.css'
