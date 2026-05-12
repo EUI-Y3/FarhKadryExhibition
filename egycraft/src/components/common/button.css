@@ -47,16 +47,7 @@ button h6{
 .beige:hover{
     background-image: url('../../assets/btn2before.svg');
     box-shadow: 0 -7px 0 0 rgba(0, 0, 0, 0.25) inset;
-
 }
- .size2 h6{
-    font-size: 24px;
- }
- @media (max-width: 580px) {
-    .size2 h6{
-    font-size: 16px;
- }
- }
 .size3{
 display: flex;
 width: 50px;
@@ -68,6 +59,26 @@ gap: 10px;
 width: 50px;
 max-width: 50px;
  }
+ .size2 h6{
+    font-size: 24px;
+ }
+ @media (max-width: 580px) {
+    .size2 h6{
+    font-size: 16px;
+ }
+ .size3{
+display: flex;
+width: 42px;
+height: 42px;
+padding: 16px 24px;
+justify-content: center;
+align-items: center;
+gap: 10px;
+width: 50px;
+max-width: 50px;
+ }
+ }
+
  .pink{
     background-image: url('../../assets/favbg.png');
 background-size: 100% 100%;
@@ -90,4 +101,7 @@ z-index: 2;
 }
  .pink:hover{
     background-image: url('../../assets/favbg.png');
+ }
+ .beige2{
+    background-image: url('./../../assets/beigebtn2.png');
  }

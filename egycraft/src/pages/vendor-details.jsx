@@ -12,6 +12,10 @@ import './home.css'
 import './../animations.css'
 import location from './../assets/locationicon2.svg'
 import heroillus from '../assets/decoricon01.svg'
+import sm1 from './../assets/smicon01.png'
+import sm2 from './../assets/smicon02.png'
+import sm3 from './../assets/smicon03.png'
+import sm4 from './../assets/smicon04.png'
 
 import frame1 from '../assets/vendorProfileBg.png'
 import Header from '../components/layout/header';
@@ -21,6 +25,7 @@ import Footer from '../components/layout/footer';
 import Categories from '../sections/categories';
 import VendorsSec from '../sections/vendorsSec';
 import BlinkingEye from '../components/common/blinkingEye';
+import IconText from '../components/common/icontextchip';
 
 const VendorDetails = () => {
     const { id } = useParams();
@@ -55,26 +60,53 @@ const [loading, setLoading] = useState(true);
             <h2>
                 {vendor.name}
             </h2>
-            <div className="categoryChip">
+            <div className="smFlex">
+                 <IconText
+                alt="email"
+                icon={sm4}
+                text={vendor.email}
+                style1="grey"
+                />
+                 <IconText
+                alt="email"
+                icon={sm3}
+                text={vendor.phone}
+                style1="grey"
+                />
+                <IconText
+                icon={sm2}
+                alt="instagram"
+                text={vendor.instagram}
+                style1="grey"
+                />
+                <IconText
+                alt="facebook"
+                icon={sm1}
+                text={vendor.facebook}
+                style1="grey"
+                />
+            </div>
+        <div className="btnFlex">
+             <div className="locationFlex boothFlex">
+                <img src={location} alt="booth location" />
+                <h6>Booth {vendor.booths?.booth_no ?? vendor.booth_ID}</h6>
+            </div>
+             <div className="categoryChip">
                  {vendor.categories?.title}
             </div>
-             <div className="locationFlex boothFlex">
-                                    <img src={location} alt="booth location" />
-                                    <h6>Booth {vendor.booths?.booth_no ?? vendor.booth_ID}</h6>
-                                </div>
-
-                                <div className="btnFlex2">
-                                <Link id="link" to="/exhibitiondetails">
-    <button className="size1 size2 beige">
-        <img className='starhover' src={star} alt="" />
-        <h6>Go To Booth</h6>
-        <img className='starhover' src={star} alt="" />
-    </button>
-</Link>
-                                <button title='favourite' className="size3 blue pink">
-                                    <img src={favorite} alt="" />
-                                </button>
-                            </div>
+        </div>
+        <div className="btnFlex2">
+            <button title='favourite' className="size3 blue pink">
+                <img src={favorite} alt="" />
+            </button>
+            <Link id="link" to="/exhibitiondetails">
+                <button className="size1 size2 beige beige2">
+                    <img className='starhover' src={star} alt="" />
+                    <h6>Go To Booth</h6>
+                    <img className='starhover' src={star} alt="" />
+                </button>
+            </Link>
+        </div>
     </section>
     </div>
     <div className="secContainer modelCont catSec">
