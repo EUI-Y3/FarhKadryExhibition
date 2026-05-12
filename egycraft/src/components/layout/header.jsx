@@ -28,7 +28,7 @@ const Header = () => {
         <Button style1="size1 blue" cta="Book my ticket" link="/booking" />
         <button aria-label="Menu" aria-expanded="false" aria-controls="menu-list" className="btn3 burgermenu" onClick={openPopup}>
                             <img  src={burger} alt="menu" />
-                        </button>
+         </button>
     </header>
     </div>
      {/* MOBILE POPUP */}

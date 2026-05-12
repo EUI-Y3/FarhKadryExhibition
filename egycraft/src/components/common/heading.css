@@ -16,7 +16,7 @@
 }
 .decor img{
     width: 116px;
-    height: 31px;
+    height: auto;
 }
 .left{
     align-items: start;
@@ -51,6 +51,22 @@
     max-width: 443px;
     text-wrap: wrap;
 }
+.center{
+    text-align: center;
+}
 .wrapped2{
     max-width: 255px;
+}
+@media (max-width: 800px) {
+.decor img {
+    width: 94px;
+    height: auto;
+}
+}
+@media (max-width: 600px) {
+    .decor img{
+    width: 80px;
+    height: auto;
+}
+
 }

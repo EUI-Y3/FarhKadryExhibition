@@ -5,7 +5,6 @@ import star from './../assets/star.svg'
 import favorite from './../assets/favoriteIcon1.svg'
 import location from './../assets/locationicon2.svg'
 import './../components/common/button.css'
-import pfp1 from './../assets/artpfp.png'
 
 import { supabase } from './../supabase';
 

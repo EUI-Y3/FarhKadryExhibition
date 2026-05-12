@@ -16,6 +16,17 @@
     height: 140px;
     width: auto;
 }
+.vendorDescSec{
+   background: var(--mainBg, #FFF4E2);
+   padding-top: 300px;
+   display: flex;
+   padding-bottom: 150px;
+}
+.vendorDescSecCont{
+   display: flex;
+    gap: 12px;
+
+}
 .vendorDetailsCont h2{
 text-align: center;
 font-size: 42px;
@@ -33,6 +44,11 @@ line-height: 48px;
     padding: 0 28px;
     margin: 10px 0;
     align-self: center;
+}
+.vendorsDescImg{
+    width: 25%;
+    height: auto;
+    object-fit: contain;
 }
 @media (max-width: 900px) {
     .vendorDetailsCont{
@@ -79,6 +95,10 @@ padding: 0 50px;
         padding: 0 80px;
         line-height: 90%;
     }
+    .vendorsDescImg{
+    width: 0;
+    height: 0;
+}
 }
 @media (max-width: 465px) {
     .vendorDetailsCont{
@@ -113,4 +133,17 @@ padding: 0 50px;
 .iconTextChip {
     gap: 2px;
 }
+}
+.productFlex{
+    display: flex;
+    padding: 100px 0;
+    border-radius: 125px 125px 100px 100px;
+    justify-content: space-between;
+    gap: 28px;
+}
+.prodCard{
+background-image: url(./../assets/prodBg.png);
+}
+.prodCont{
+    width: 75%;
 }
