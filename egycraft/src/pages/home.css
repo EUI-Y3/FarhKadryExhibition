@@ -143,6 +143,7 @@ section{
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  width: 480px;
   gap: 10px;
 }
 .heroCont1{
@@ -311,6 +312,9 @@ font-weight: 400;
   width: 70%;
   padding: 200px 0 100px 0;
 }
+.homehero{
+    margin-top: 130px;
+}
 @media  (max-width: 1460px) {
  .animatedCircleCont img{
   width: 100%;
@@ -421,10 +425,16 @@ h1{
 }
 @media (max-width: 600px) {
   .secContainer{
-  padding: 0 15px;
+  padding: 0 23px;
 }
 .sec2Cont{
   bottom: 0px;
+}
+.homeS2Decor2{
+  scale: 0.8;
+}
+.homeS2Decor1{
+  scale: 0.5;
 }
 .mandala{
   height: auto;
@@ -434,6 +444,21 @@ h1{
   scale: 2;
   bottom: 90px;
 }
+.homehero{
+  margin-top: 40px;
+}
+.logoCont{
+  width: 380px;
+}
+.homelogo{
+  width: 380px;
+}
+.logodecor2{
+  width: 90px;
+}
+.logoCont svg{
+  width: 100%
+}
 .homeMandala{
    height: auto;
   width: 100%;
@@ -441,7 +466,21 @@ h1{
   height: auto;
   scale: 2;
    bottom: 100px;
-
+}
+.homeCont .logoicon {
+    animation: none;
+    scale: 0.5;
+}
+.homeCont .scaleIn2{
+  animation: none;
+}
+/* .homeCont .logoicon path {
+    width: 106px;
+    height: 102px;
+    scale: 0.5;
+} */
+h3{
+  font-size: 28px;
 }
 h1{
   font-size: 32px;
@@ -455,6 +494,7 @@ background: #007E7A;
   top: 0;
   z-index: 5; */
 }
+
 .scrollAnimate{
     view-timeline: --scroll-tl;
     animation-timeline: --scroll-tl;

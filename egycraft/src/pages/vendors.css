@@ -4,7 +4,11 @@
     text-align: center;
     max-width: 900px;
 }
-
+.illusCont{
+  height: 100%;
+}
+.illusCont img{
+  height: 100%}
 .vendorsTitleflex{
   display: flex;
   justify-content: space-between;

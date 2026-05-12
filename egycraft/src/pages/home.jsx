@@ -3,7 +3,6 @@ import { useState, useEffect } from 'react';
 
 import SeamlessScene from '../components/common/SeamlessScene';
 import Model1 from '../components/common/model';
-import './home.css'
 import './../animations.css'
 import hiwicon1 from './../assets/hiwIcon03.svg'
 import hiwicon2 from './../assets/hiwIcon02.svg'
@@ -24,6 +23,8 @@ import FatimaHand from '../components/common/fatimahand';
 import Footer from '../components/layout/footer';
 import Preloader from '../components/layout/preloader';
 import PopUp from '../components/layout/popup';
+import './home.css'
+
 const Home = () => {
     return ( <>
     <Preloader />
@@ -38,13 +39,13 @@ const Home = () => {
     <div className="secContainer">
         <section className='section1 '>
             
-        <div className="heroCont1">
+        <div className="heroCont1 homehero">
             <div className="logoicon scaleIn2">
                 <FatimaHand />
             </div>
             <div className="logoCont">
                 <MouseTrailSVG />
-            <img className='scaleIn3' src={herologo} alt="Egycraft ايجي كرافت" />
+            <img className='homelogo scaleIn3' src={herologo} alt="Egycraft ايجي كرافت" />
             <img className='logodecor2 scaleIn4' src={logodecor2} alt="" />
         </div>
         <h3 className='fadeIn2'>Discover The Craft of Egypt</h3>
