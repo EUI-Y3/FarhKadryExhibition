@@ -1,0 +1,19 @@
+.iconTextChip{
+  display: flex;
+  gap: 12px;
+}
+.iconTextChip img{
+  width: 20px;
+height: 20px;
+}
+.iconTextChip .blue{
+    color: #18466F;
+}
+.iconTextChip .grey{
+    color: #364153;
+}
+.iconTextChip{
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+}

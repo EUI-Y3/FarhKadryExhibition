@@ -15,7 +15,7 @@ const VendorsSec = () => {
     const getAllVendors = async () => {
         const { data, error } = await supabase
             .from("vendors")
-            .select("*, booths(booth_number), categories(title)");
+            .select("*, booths(booth_no), categories(title)");
 
         if (error) {
             console.log(error);
@@ -38,9 +38,9 @@ const VendorsSec = () => {
                         <div className="vendorCardBody">
                             <h5>{vendor.name}</h5>
                             <div className="cardFlex1">
-                                <div className="locationFlex">
+                                <div className="locationFlex boothFlex">
                                     <img src={location} alt="booth location" />
-                                    <h6>Booth {vendor.booths?.booth_number ?? vendor.booth_ID}</h6>
+                                    <h6>Booth {vendor.booths?.booth_no ?? vendor.booth_ID}</h6>
                                 </div>
                                 <div className="categoryChip">
                                     {vendor.categories?.title}

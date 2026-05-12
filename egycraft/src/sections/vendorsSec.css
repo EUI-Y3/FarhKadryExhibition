@@ -74,3 +74,16 @@ gap: 13px;
   height: 121px;
   border-radius: 50%;
 }
+.vendorsFlex{
+    padding-top: 0;
+}
+.boothFlex {
+    gap: 4px;
+}
+.boothFlex h6{
+color: #18466F;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 20px;
+}

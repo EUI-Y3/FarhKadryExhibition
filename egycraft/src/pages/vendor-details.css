@@ -11,3 +11,34 @@
     top: 180px;
     z-index: 99;
 }
+.vendorDetailsCont .vendorPfp{
+    height: 140px;
+    width: auto;
+}
+.vendorDetailsCont h2{
+text-align: center;
+font-size: 42px;
+font-style: normal;
+font-weight: 900;
+line-height: 48px;
+}
+@media (max-width: 900px) {
+    .vendorDetailsCont{
+    background-image: url(./../assets/vendordetailsbg2.png);
+    min-height: 523px;
+    background-size: 100% 100%;
+    top: 180px;
+}
+.vendorDetailsCont .vendorPfp{
+    height: 140px;
+    width: auto;
+}
+}
+@media (max-width: 690px) {
+    .vendorDetailsCont{
+    background-image: url(./../assets/vendordetailsbg2.png);
+    min-height: 424px;
+    background-size: 100% 100%;
+    top: 180px;
+}
+}

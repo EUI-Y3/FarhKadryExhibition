@@ -1,13 +1,16 @@
-import { useParams } from 'react-router-dom';
+import { Link, useParams } from 'react-router-dom';
 import React, { useEffect, useState } from 'react';
 import { supabase } from './../supabase';
 import Preloader from '../components/layout/preloader';
 import './vendors.css'
 import './vendor-details.css'
+import star from './../assets/star.svg'
+import favorite from './../assets/favoriteIcon1.svg'
 import './event.css'
 import SeamlessScene from '../components/common/SeamlessScene';
 import './home.css'
 import './../animations.css'
+import location from './../assets/locationicon2.svg'
 import heroillus from '../assets/decoricon01.svg'
 
 import frame1 from '../assets/vendorProfileBg.png'
@@ -28,7 +31,7 @@ const [loading, setLoading] = useState(true);
         const getVendor = async () => {
             const { data } = await supabase
                 .from("vendors")
-                .select("*, booths(booth_number), categories(title)")
+                .select("*, booths(booth_no), categories(title)")
                 .eq("id", id)
                 .single();
             setVendor(data);
@@ -46,17 +49,32 @@ const [loading, setLoading] = useState(true);
     <Header />
     <SeamlessScene/>
     <main>
-  
     <div className="secContainer">
-        <section className='fadeIn vendorDetailsCont'>
+        <section className='scaleIn vendorDetailsCont'>
             <img className='vendorPfp' src={vendor.profile_pic} alt={vendor.name} />
             <h2>
                 {vendor.name}
             </h2>
-            
             <div className="categoryChip">
                  {vendor.categories?.title}
             </div>
+             <div className="locationFlex boothFlex">
+                                    <img src={location} alt="booth location" />
+                                    <h6>Booth {vendor.booths?.booth_no ?? vendor.booth_ID}</h6>
+                                </div>
+
+                                <div className="btnFlex2">
+                                <Link id="link" to="/exhibitiondetails">
+    <button className="size1 size2 beige">
+        <img className='starhover' src={star} alt="" />
+        <h6>Go To Booth</h6>
+        <img className='starhover' src={star} alt="" />
+    </button>
+</Link>
+                                <button title='favourite' className="size3 blue pink">
+                                    <img src={favorite} alt="" />
+                                </button>
+                            </div>
     </section>
     </div>
     <div className="secContainer modelCont catSec">

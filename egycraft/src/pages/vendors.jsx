@@ -61,7 +61,7 @@ Vendors"
         </section>
     </div>
    <div className="secContainer sec2Cont  modelCont mapCont">
-    <section className='section2 mapSec'>
+    <section className=''>
     <div className="map1 map2">
         <HeadingBlock 
         style1="dark center decor"
