@@ -48,7 +48,7 @@ const VendorsSec = () => {
                             </div>
                             <p>{vendor.description}</p>
                             <div className="btnFlex2">
-                                <Link id="link" to={"vendor-details/" + vendor.id}>
+                                <Link id="link" to={"/vendor-details/" + vendor.id}>
     <button className="size1 size2 blue">
         <img className='starhover' src={star} alt="" />
         <h6>View Profile</h6>

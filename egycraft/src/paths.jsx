@@ -5,6 +5,7 @@ import Event from './pages/event';
 import Error from './pages/error';
 import Booking from './pages/booking';
 import Vendors from './pages/vendors';
+import VendorDetails from './pages/vendor-details';
 function Paths() {
     return (
 
@@ -14,7 +15,7 @@ function Paths() {
         <Route path="/exhibitiondetails" element={<Event />} />
         <Route path="/booking" element={<Booking />} />
         <Route path="/vendors" element={<Vendors />} />
-
+        <Route path="vendor-details/:id" element={<VendorDetails />} />
 
         <Route path="*" element={<Error />} />
 
