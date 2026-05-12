@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 import './vendorsSec.css'
 import star from './../assets/star.svg'
 import favorite from './../assets/favoriteIcon1.svg'
@@ -47,11 +48,13 @@ const VendorsSec = () => {
                             </div>
                             <p>{vendor.description}</p>
                             <div className="btnFlex2">
-                                <button className="size1 size2 blue">
-                                    <img className='starhover' src={star} alt="" />
-                                    <h6>View Profile</h6>
-                                    <img className='starhover' src={star} alt="" />
-                                </button>
+                                <Link id="link" to={"vendor-details/" + vendor.id}>
+    <button className="size1 size2 blue">
+        <img className='starhover' src={star} alt="" />
+        <h6>View Profile</h6>
+        <img className='starhover' src={star} alt="" />
+    </button>
+</Link>
                                 <button title='favourite' className="size3 blue pink">
                                     <img src={favorite} alt="" />
                                 </button>
