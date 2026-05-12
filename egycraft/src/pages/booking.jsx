@@ -81,7 +81,7 @@ const Booking = () => {
       .from('booking')
       .insert([
         {
-          "phone-no": formData.phone,
+          "phone_no": formData.phone,
           email: formData.email,
           tickets_no: parseInt(formData.tickets),
           day: formData.day
