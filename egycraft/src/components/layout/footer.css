@@ -6,7 +6,8 @@ footer{
     align-items: center;
     position: relative;
     flex-direction: column;
-    z-index: -1;
+    z-index: 99;
+    bottom: 0;
 }
 footer .animatedCircleCont{
     scale: -1;
@@ -19,4 +20,7 @@ footer .animatedCircleCont img{
     left: 0;
     scale: 1;
     width: 100%;
+}
+.footerSm{
+    height: 40px;
 }

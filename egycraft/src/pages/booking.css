@@ -29,7 +29,7 @@
     padding: 0 20px;
 }
 .formPage{
-    max-height: none;
+    max-height: 2000px;
 }
 .theBG{
     bottom: 100px;
@@ -74,12 +74,12 @@ form{
     align-items: center;
 }
 .formCont{
-    margin-top: 100px;
+    margin-top: 80px;
     width: 100%;
     padding: 0 clamp(20px, 5vw, 180px);
 }
 .heroimg{
-    width: 263px;
+    width: 226px;
 }
 .inputBg{
     width: 100%;
@@ -102,6 +102,7 @@ form{
     width: 99.8%;
     bottom: 0;
 }
+
 .formSec{
     flex-direction: column;
 }
@@ -136,9 +137,14 @@ form{
     .formbg {
     padding-top: 0px;
 }
+.formbg{
+    background-image: url(../assets/fombg3.png);
+}
 .formEnd{
-            width: 101%;
-        bottom: 160px;
+    display: none;
+}
+.theBG{
+    display: none;
 }
     .heroimg {
         width: 156px;

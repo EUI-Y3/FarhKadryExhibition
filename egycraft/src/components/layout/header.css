@@ -114,3 +114,7 @@ gap: 22px;
     bottom: -4px;
 }
 }
+@media (max-width: 600px){
+.headerCont{
+    padding: 0 40px;
+}}
