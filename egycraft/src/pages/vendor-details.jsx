@@ -128,7 +128,7 @@ const VendorDetails = () => {
                 subheading={`Discover The World of ${vendor.name}`}
                 style1="decor dark center"
                 />
-                <p className='center light'>{vendor.description}</p>
+                <p className='center'>{vendor.description}</p>
             </div>
             <img className='vendorsDescImg tilt' src={horse2} alt="" />
         </section>

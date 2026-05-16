@@ -17,7 +17,8 @@ const Footer = () => {
                 <img src={circle} alt="" />
             </div>
     <FatimaHand />
-    <IconText
+   <div className="footerFlex">
+     <IconText
                 alt="email"
                 icon={sm1}
                 text="egycraft@add.com"
@@ -29,6 +30,7 @@ const Footer = () => {
                 text="+61 (0) 383 766 284"
                 style1="blues"
                 />
+   </div>
                 <p>
 
                     Level 13, 2 Mohamed Rami St,
@@ -45,6 +47,7 @@ Cairo, New Cairo, Egypt
                         <img className='footerSm' src={sm5} alt="" />
                     </button>
                 </div>
+                <h6>Created ny FM Studios. All rights reserved</h6>
     </footer>
     </> );
 }

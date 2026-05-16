@@ -72,7 +72,9 @@ gap: 13px;
 .vendorPfp{
   width: 121px;
   height: 121px;
+      border: 6px solid #18466f;
   border-radius: 50%;
+  object-fit: cover;
 }
 .vendorsFlex{
     padding-top: 0;

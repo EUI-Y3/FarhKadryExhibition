@@ -14,7 +14,7 @@
 }
 .vendorDetailsCont .vendorPfp{
     height: 140px;
-    width: auto;
+    width: 140px;
 }
 .vendorDescSec{
    background: var(--mainBg, #FFF4E2);
@@ -86,7 +86,7 @@ margin-top: 0;
 }
 .vendorDetailsCont .vendorPfp{
     height: 100px;
-    width: auto;
+    width: 100px;
 }
 .vendorDetailsCont h2{
 text-align: center;
@@ -98,7 +98,7 @@ padding: 0 50px;
 @media (max-width: 690px) {
     .vendorDetailsCont .vendorPfp{
     height: 88px;
-    width: auto;
+    width: 88px;
     margin: 15px 0 5px 0;
 }
     .vendorDetailsCont{
@@ -155,7 +155,7 @@ padding: 0 50px;
     }
         .vendorDetailsCont .vendorPfp {
         height: 78px;
-        width: auto;
+        width: 78px;
         margin: 23px 0 5px 0;
     }
     .iconTextChip h6 {

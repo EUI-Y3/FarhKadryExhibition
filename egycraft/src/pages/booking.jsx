@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { supabase } from '../supabase';
 import './home.css';
 import './booking.css';
@@ -99,7 +99,23 @@ const Booking = () => {
       setErrors({});
     }
   };
+  const [maxDay, setMaxDay] = useState("");
+  useEffect(() => {
+    const getExhibitionTime = async () => {
+      const { data } = await supabase
+        .from("exhibitionTime")
+        .select("time")
+        .order("id", { ascending: true })
+        .limit(1)
+        .single();
 
+      if (data?.time) {
+        setMaxDay(new Date(data.time).toISOString().split("T")[0]);
+      }
+    };
+
+    getExhibitionTime();
+  }, []);
   return (
     <>
     <Preloader />
@@ -195,6 +211,7 @@ const Booking = () => {
                         type="date"
                         value={formData.day}
                         onChange={handleChange}
+                        max={maxDay}
                         aria-required="true"
                         aria-describedby={errors.day ? 'day-error' : undefined}
                         aria-invalid={!!errors.day}

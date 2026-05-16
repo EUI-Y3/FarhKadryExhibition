@@ -57,7 +57,7 @@ const HomeS2 = () => {
 
             <div className="sec2imgCont">
                 <img className='moveIn scrollAnimate2' 
-                    src={sec2img} 
+                    src={section.image} 
                     alt="Decorative Weavery beautfully displayed in pink, blue and teal colors" 
                 />
             </div>

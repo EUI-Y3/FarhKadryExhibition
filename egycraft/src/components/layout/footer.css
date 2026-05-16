@@ -6,6 +6,7 @@ footer{
     align-items: center;
     position: relative;
     flex-direction: column;
+    padding: 0 12px;
     z-index: 99;
     bottom: 0;
 }
@@ -23,4 +24,34 @@ footer .animatedCircleCont img{
 }
 .footerSm{
     height: 40px;
+}
+.footerFlex{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin: 12px 0;
+}
+footer p{
+    text-align: center;
+}
+footer svg{
+    margin-top: 200px;
+}
+footer h6{
+    color: darkgrey;
+    letter-spacing: 18%;
+    font-weight: 300;
+    font-size: 14px;
+    text-align: center;
+}
+@media (max-width:500px) {
+    footer svg{
+    margin-top: 100px;
+    scale: 0.8;
+}
+footer p{
+    margin: 0 12px;
+    padding: 0 12px;
+    font-size: 16px;
+}
 }

@@ -302,7 +302,7 @@ font-weight: 400;
     right: 81%;
     height: 100%;
   /* right: 100%; */
-  scale: 1.5;
+  scale: 1.3;
   animation: spin 40s linear infinite;
 }
 .section3{
@@ -327,8 +327,14 @@ font-weight: 400;
 .sec2imgCont{
   width: 50%;
   display: flex;
+  max-width: 50%;
   max-height: 572px;
   align-items: center;
+}
+.sec2imgCont img{
+  min-width: 752px;
+  height: auto;
+  right: -100px;
 }
 .modelCont{
   background-color: #FFF4E2;
@@ -412,10 +418,22 @@ font-weight: 400;
   right: 0;
   height: auto;
   scale: 2;
-  bottom: 100px;
+  bottom: 220px
 }
 .sec2Cont{
   bottom: 0px;
+}
+.sec2imgCont{
+  width: 100%;
+  display: flex;
+  max-width: unset;
+  max-height: 572px;
+  align-items: center;
+}
+.sec2imgCont img{
+  min-width: unset;
+  height: auto;
+  right: unset;
 }
 }
 @media  (max-width: 800px){
